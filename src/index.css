@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: Helvetica, 'Inter', 'Helvetica Nueue';
   font-weight: 400;
+  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
