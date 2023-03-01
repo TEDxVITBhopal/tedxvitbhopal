@@ -1,15 +1,104 @@
+.find-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
 
 .map-container {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
+  flex: 1;
+  margin-right: 100px;
+  transform: translateX(-20%);
+}
+
+.map-container iframe {
+  position: absolute;
+  z-index: 1;
+  width: 45vw;
+  height: 350px;
+  transform: translateY(-50%);
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 67px -49px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 67px -49px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 67px -49px rgba(0, 0, 0, 0.75);
+}
+
+h3 {
+  font-size: xx-large;
+  font-weight: bold;
+  margin-bottom: 20px;
+  width: 20vw;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-block: 15vh;
+  height: 500px;
+  width: 40vw;
+  border: 30px #e62b1e solid;
+  margin-left: 15vw;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  text-align: center;
+  word-wrap: normal;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  width: 20vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .find-us {
+    display: flex;
+    flex-wrap: wrap;
+    transform: translateY(20%);
+    margin-inline: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    border: 10px #e62b1e solid;
+    height: fit-content;
   }
-  
-  .map-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
+  .content {
+    border: none;
     width: 100%;
     height: 100%;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    margin-block: 0;
+    margin-left: 1vw;
+    align-items: center;
+    justify-content: center;
   }
- 
+
+  h3 {
+    font-size: large;
+    width: 100%;
+  }
+
+  p {
+    font-size: small;
+    width: 100%;
+  }
+
+  .map-container {
+    position: relative;
+    order: 1;
+    margin-right: 0;
+    transform: translateX(0%);
+    margin-bottom: 20px;
+  }
+
+  .map-container iframe {
+    width: 100%;
+    transform: translateY(0%);
+    z-index: 0;
+    position: relative;
+    border-radius: 0px;
+  }
+}

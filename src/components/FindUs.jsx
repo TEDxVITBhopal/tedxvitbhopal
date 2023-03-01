@@ -1,11 +1,11 @@
 import React from 'react'
-import './Findus.css'
+import './FindUs.css'
 function FindUs() {
   return (
-    <>
+  <div className='find-us'>
    <div className="content">
-    <h3 className='text-center'>Welcome to VIT-Bhopal</h3>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid inventore earum nobis pariatur eius quo ab consequatur beatae ex! In soluta suscipit cum, labore consequuntur dicta laboriosam consectetur asperiores et ab fuga sapiente minima id quisquam dolorem a iure dolorum distinctio, adipisci optio voluptates ea modi? Consequatur, possimus voluptates velit nemo aut porro ab iure non perferendis quod recusandae, ipsum alias aspernatur voluptatem minima excepturi, fuga perspiciatis facere necessitatibus consequuntur.</p>
+      <h3 className='text-center'>Welcome to VIT Bhopal!</h3>
+      <p>VIT Bhopal University is a private university in Kothri Kalan in Sehore district, Madhya Pradesh, India. It was established by the Vellore Institute of Technology.</p>
    </div>
     <div className="map-container">
      
@@ -23,7 +23,7 @@ function FindUs() {
     ></iframe>
     
   </div>
-  </>
+  </div>
   )
 }
 
