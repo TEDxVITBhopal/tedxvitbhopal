@@ -12,7 +12,7 @@ const Home = () => {
             <div class="dp-div" id="our-events">
             </div>
             {/* Footer here */}
-            {/* can I change these to semantic HTML tags? */}
+            {/* can I change these to semantic HTML tags? (Kshitij: YES) */}
         </>
     )
 }
