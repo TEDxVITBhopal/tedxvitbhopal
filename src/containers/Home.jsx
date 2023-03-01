@@ -1,3 +1,5 @@
+import FindUs from "../components/FindUs"
+
 const Home = () => {
     return(
         <main className="home-page">
@@ -8,7 +10,7 @@ const Home = () => {
                 MESSAGE
             </section>
             <section class="dp-div" id="find-us">
-                FIND US
+                <FindUs/>
             </section>
             <section class="dp-div" id="about-us">
                 ABOUT US

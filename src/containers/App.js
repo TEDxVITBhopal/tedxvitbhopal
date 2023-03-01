@@ -4,6 +4,7 @@ import NotFound from './NotFound';
 import Home from './Home';
 import Header from '../components/Header';
 
+
 function App() {
   return (
     <>
@@ -11,6 +12,7 @@ function App() {
         <Route path='/' element={<><Header /><Home /></>} />
         <Route path='/*' element={<NotFound />} />
       </Routes>
+      
     </>
   );
 }
