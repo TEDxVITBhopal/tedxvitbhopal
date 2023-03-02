@@ -1,5 +1,5 @@
 import React from 'react'
-import './FindUs.css'
+import './Findus.css'
 function FindUs() {
   return (
   <div className='find-us'>
@@ -18,7 +18,7 @@ function FindUs() {
       allowFullScreen=""
       loading="lazy" 
       aria-hidden="false"
-      referrerpolicy="no-referrer-when-downgrade"
+      referrerPolicy="no-referrer-when-downgrade"
       tabIndex="0"
     ></iframe>
     
