@@ -1,29 +1,42 @@
 .header {
     display: flex;
-    height: 150px;
+    height: 100px;
     width: 100vw;
     align-items: center;
     margin: 0;
     padding: 0;
     background-color: black;
     padding: 0px 10px;
+    transition: 50ms;
     z-index: 1;
-    transition: 200ms;
     position: fixed;
+    top: 0;
+    left: 0;
+}
+.spacer {
+    height: 96px;
 }
 .header.mini {
-    height: 100px;
+    transition: 0ms;
+    height: 50px;
 }
 .header-logo {
     width: 25%;
     max-width: 300px;
     min-width: 200px; 
 }
+.header-logo.mini {
+    width: 10%;
+    max-width: 200px;
+    min-width: 100px;
+}
 .header-navbar {
     display: flex;
+    width: 100%;
+    padding-right: 50px;
     flex-direction: row;
     width: 100%;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     gap: 25px;
 }
@@ -35,7 +48,7 @@
     text-decoration: none;
     font-size: large;
     color: white;
-    padding: 10px;
+    padding: 5px 10px;
     border-radius: 10px;
     transition: 200ms;
 }
@@ -43,6 +56,9 @@
     color: white;
     background-color: white;
     color: black;
+}
+.navlink.active {
+    background-color: #eb0028;
 }
 
 @media screen and (max-width: 800px) {

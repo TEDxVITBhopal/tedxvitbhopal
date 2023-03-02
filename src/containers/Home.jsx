@@ -3,7 +3,6 @@ import FindUs from "../components/FindUs"
 const Home = () => {
     return(
         <main className="home-page">
-            <div className="spacer" style={{height: '150px'}}></div>
             <section className="dp-div" id="welcome">
                 WELCOME
             </section>
