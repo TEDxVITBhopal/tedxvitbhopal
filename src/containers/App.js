@@ -12,7 +12,6 @@ function App() {
         <Route path='/' element={<><Header /><Home /></>} />
         <Route path='/*' element={<NotFound />} />
       </Routes>
-      
     </>
   );
 }
