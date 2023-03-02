@@ -1,0 +1,91 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .center {
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 30px;
+  }
+  
+  .red {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+    color: #e73225;
+  }
+  
+  .black {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: #130003;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 60px;
+  }
+  
+  .image-container {
+    margin-right: 30px;
+  }
+  
+  .question-mark {
+    width: 100%;
+    max-width: 606px;
+    height: auto;
+  }
+  
+  .content1 {
+    width: 100%;
+    max-width: 568px;
+    height: auto;
+    padding: 20px;
+    border: 1px solid #e73225;
+    font-family: "Jaldi";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    color: #130003;
+    box-sizing: border-box;
+    margin-top: -80px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .content-container {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px;
+    }
+  
+    .image-container {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  
+    .question-mark {
+      max-width: 100%;
+    }
+  
+    .content1 {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+  }
+  
+  

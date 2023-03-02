@@ -1,4 +1,5 @@
 import FindUs from "../components/FindUs"
+import OurMessage from "../components/OurMessage"
 
 const Home = () => {
     return(
@@ -7,7 +8,8 @@ const Home = () => {
                 WELCOME
             </section>
             <section className="dp-div" id="our-message">
-                MESSAGE
+                <OurMessage/>
+                
             </section>
             <section className="dp-div" id="find-us">
                 <FindUs/>
