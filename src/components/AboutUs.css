@@ -2,39 +2,102 @@
   display: flex;
   margin: 0;
   padding: 0;
+  padding-top: 10vh;
   align-content: items;
   justify-content: center;
 }
 
-.about {
-  width: 50vw;
-  padding: 5%;
-}
-
 #about-tedx {
   float: left;
-  width: 50vw;
+  width: 60vw;
+  padding: 6%;
 }
 
 #about-tedxvitb {
+  margin-top: 120px;
   float: right;
-  width: 50vw;
+  width: 40vw;
+  padding: 2%;
 }
 
 h1 {
   font-weight: bold;
   color: #d9d5d5;
-  font-size: 64px;
+  font-size: 75px;
+  word-wrap: break-word;
 }
 
 .x-logo {
   position: absolute;
   height: 80px;
   margin-left: -20px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .text-box {
   border: 2px #e62b1e solid;
   padding: 20px;
+  width: 80%;
+}
+
+.people-cheering {
+  position: absolute;
+  width: 50%;
+  margin-top: 320px;
+  transform: translateX(-40%);
+}
+
+.bulb {
+  position: absolute;
+  width: 6%;
+  margin-top: 250px;
+  transform: translateX(60%);
+}
+
+@media only screen and (max-width: 768px) {
+  .about-us {
+    display: block;
+    position: relative;
+    padding: 0;
+  }
+
+  .bulb {
+    display: none;
+  }
+
+  .text-box {
+    width: 75vw;
+  }
+
+  #about-tedx {
+    float: none;
+    width: 100vw;
+    margin: 0;
+    margin-left: 5vw;
+  }
+
+  #about-tedxvitb {
+    float: none;
+    width: 100%;
+    margin: 0;
+    margin-top: 30px;
+    margin-left: 9vw;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .x-logo {
+    margin-top: 5px;
+    margin-left: -12px;
+    height: 50px;
+  }
+
+  .people-cheering {
+    position: relative;
+    width: 100%;
+    margin-top: -30px;
+    transform: translateX(0%);
+  }
 }
