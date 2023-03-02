@@ -3,6 +3,8 @@
   align-items: center;
   justify-content: center;
   margin: auto;
+  background: url("../resources/paintedx.png") fixed;
+  background-size: cover;
 }
 
 .map-container {
@@ -37,9 +39,11 @@ h3 {
   height: 500px;
   width: 40vw;
   border: 30px #e62b1e solid;
-  margin-left: 15vw;
+  background-color: white;
+  margin-left: 12.5vw;
   align-items: center;
   justify-content: center;
+  box-shadow: 10px 10px 67px -49px rgba(0, 0, 0, 0.75);
 }
 
 p {
@@ -62,6 +66,7 @@ p {
     justify-content: center;
     border: 10px #e62b1e solid;
     height: fit-content;
+    background: none;
   }
   .content {
     border: none;
@@ -74,6 +79,7 @@ p {
     margin-left: 1vw;
     align-items: center;
     justify-content: center;
+    box-shadow: none;
   }
 
   h3 {
@@ -100,5 +106,6 @@ p {
     z-index: 0;
     position: relative;
     border-radius: 0px;
+    box-shadow: none;
   }
 }
