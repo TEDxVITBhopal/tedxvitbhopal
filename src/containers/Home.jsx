@@ -1,4 +1,5 @@
 import FindUs from "../components/FindUs"
+import AboutUs from "../components/AboutUs"
 
 const Home = () => {
     return(
@@ -13,7 +14,7 @@ const Home = () => {
                 <FindUs/>
             </section>
             <section className="dp-div" id="about-us">
-                ABOUT US
+                <AboutUs/>
             </section>
             <section className="dp-div" id="our-events">
                 EVENTS
