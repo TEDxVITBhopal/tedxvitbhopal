@@ -1,5 +1,5 @@
 import React from 'react'
-import './Findus.css'
+import './FindUs.css'
 function FindUs() {
   return (
   <div className='find-us'>
