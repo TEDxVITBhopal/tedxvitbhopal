@@ -1,11 +1,18 @@
 .header {
     display: flex;
     height: 150px;
+    width: 100vw;
     align-items: center;
     margin: 0;
     padding: 0;
     background-color: black;
     padding: 0px 10px;
+    z-index: 1;
+    transition: 200ms;
+    position: fixed;
+}
+.header.mini {
+    height: 100px;
 }
 .header-logo {
     width: 25%;
@@ -20,13 +27,22 @@
     align-items: center;
     gap: 25px;
 }
+.header-navbar-dropdown {
+    display: none;
+}
 .navlink {
     color: white;
     text-decoration: none;
     font-size: large;
-    background-color: red;
+    color: white;
     padding: 10px;
     border-radius: 10px;
+    transition: 200ms;
+}
+.navlink:hover {
+    color: white;
+    background-color: white;
+    color: black;
 }
 
 @media screen and (max-width: 800px) {
