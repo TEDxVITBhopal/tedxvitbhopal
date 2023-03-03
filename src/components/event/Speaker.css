@@ -1,6 +1,9 @@
 body {
   overflow-x: hidden;
 }
+img {
+  object-fit: cover;
+}
 
 .heading1 {
   font-weight: bolder;
@@ -36,6 +39,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-block: 100px;
 }
 
 .up {

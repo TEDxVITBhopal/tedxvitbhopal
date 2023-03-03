@@ -5,6 +5,8 @@ import mic from '../../resources/mic.png'
 
 function Speaker({images}) {
 
+  var showBottom = true;
+
   if (images.length <= 4){
     var showBottom = false;
   }
@@ -41,7 +43,7 @@ function Speaker({images}) {
         <div className="imageWrapper" >
           <img className='mic' src={mic} alt="" />
         </div>
-      </div> : null }  
+      </div> : <div></div> }  
     </div>
   )
 }
