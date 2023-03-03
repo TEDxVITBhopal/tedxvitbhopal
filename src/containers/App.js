@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import NotFound from "./NotFound";
 import Home from "./Home";
 import Header from "../components/Header";
-import Event from "../components/Event";
+import Event from "./Event";
 
 function App() {
   return (

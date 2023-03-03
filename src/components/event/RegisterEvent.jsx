@@ -1,10 +1,9 @@
-import Forms from "./Forms";
+import React from 'react';
+import Forms from './Forms';
 import styles from "./Event.module.css";
 
-const Event = () => {
+const RegsiterEvent = () => {
   return (
-    <div>
-      Event Page
       <div>
         <div className={styles.heading}>
           <span className={styles.heading}>Register for TedX Event.</span>
@@ -15,8 +14,7 @@ const Event = () => {
           }
         />
       </div>
-    </div>
   );
 };
 
-export default Event;
+export default RegsiterEvent;

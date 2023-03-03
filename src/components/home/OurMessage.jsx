@@ -1,6 +1,6 @@
 import React from "react";
 import "./OurMessage.css";
-import Logo from "../resources/logo.png";
+import Logo from "../../resources/logo.png";
 
 function OurMessage() {
   return (

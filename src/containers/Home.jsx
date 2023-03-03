@@ -1,8 +1,8 @@
-import FindUs from "../components/FindUs"
+import FindUs from "../components/home/FindUs"
 
-import OurMessage from "../components/OurMessage"
+import OurMessage from "../components/home/OurMessage"
 
-import AboutUs from "../components/AboutUs"
+import AboutUs from "../components/home/AboutUs"
 
 const Home = () => {
     return(

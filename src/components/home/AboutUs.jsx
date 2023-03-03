@@ -1,8 +1,8 @@
 import React from 'react';
 import './AboutUs.css'
-import XLogo from '../resources/x-logo.png';
-import PeopleCheer from '../resources/people-cheering.png';
-import Bulb from '../resources/bulb.png';
+import XLogo from '../../resources/x-logo.png';
+import PeopleCheer from '../../resources/people-cheering.png';
+import Bulb from '../../resources/bulb.png';
 
 function AboutUs() {
     return(
