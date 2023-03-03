@@ -9,7 +9,11 @@ const Event = () => {
         <div className={styles.heading}>
           <span className={styles.heading}>Register for TedX Event.</span>
         </div>
-        <Forms />
+        <Forms
+          event={
+            "https://tedxvitbhopal-178a6-default-rtdb.firebaseio.com/event.json"
+          }
+        />
       </div>
     </div>
   );

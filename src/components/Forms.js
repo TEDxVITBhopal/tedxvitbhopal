@@ -3,28 +3,26 @@ import styles from "./Forms.module.css";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 
-const Forms = () => {
+const Forms = ({ event }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
 
   const submitHandler = async (e) => {
     e.preventDefault();
+
     try {
-      const response = await fetch(
-        "https://tedxvitbhopal-178a6-default-rtdb.firebaseio.com/event.json",
-        {
-          method: "POST",
-          body: JSON.stringify({
-            name: name,
-            email: email,
-            phone: phone,
-          }),
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
+      const response = await fetch(event, {
+        method: "POST",
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          phone: phone,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
 
       if (!response.ok) {
         console.log("error in the submitting");
