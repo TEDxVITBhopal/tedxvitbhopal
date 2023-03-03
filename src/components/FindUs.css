@@ -39,7 +39,7 @@ h3 {
   margin-block: 15vh;
   height: 500px;
   width: 40vw;
-  border: 30px #e62b1e solid;
+  border: 30px #eb0028 solid;
   background-color: rgba(0, 0, 0, 0);
   margin-left: 12.5vw;
   align-items: center;
@@ -65,7 +65,7 @@ p {
     padding: 20px;
     align-items: center;
     justify-content: center;
-    border: 10px #e62b1e solid;
+    border: 10px #eb0028 solid;
     height: fit-content;
     background: none;
   }

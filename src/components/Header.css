@@ -49,6 +49,7 @@
     font-size: large;
     color: white;
     padding: 5px 10px;
+    margin: 0;
     border-radius: 10px;
     transition: 200ms;
 }
@@ -64,8 +65,21 @@
 @media screen and (max-width: 800px) {
     .header {
         height: 100px;
+        display: grid;
+    }
+    .header.mini {
+        height: 60px;
     }
     .header-navbar {
         display: none;
+    }
+    .header-navbar-dropdown {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .navlink {
+        font-size: small;
+        padding: 5px;
     }
 }

@@ -12,7 +12,6 @@ const Home = () => {
             </section>
             <section className="dp-div" id="our-message">
                 <OurMessage/>
-                
             </section>
             <section className="dp-div" id="find-us">
                 <FindUs/>
