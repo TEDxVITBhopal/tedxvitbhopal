@@ -2,10 +2,8 @@
   display: flex;
   flex-direction: column;
   height: max-content;
-  border: 2px solid black;
 }
 
 .dp-div {
   height: 100vh;
-  border: 1px solid black;
 }
