@@ -51,11 +51,11 @@ const Header = () => {
             </nav>
         </header>
         <nav id='collapsible-navbar' className={scrollPostion>minimiseAtPoint? 'header-navbar-dropdown mini':'header-navbar-dropdown'}>
-                <h6 className={findActivesSection(0)} onClick={() => window.scrollTo(0, 0)}>Home</h6>
-                <h6 className={findActivesSection(1)} onClick={() => scrollTo(1)}>Goals</h6>
-                <h6 className={findActivesSection(2)} onClick={() => scrollTo(2)}>Find Us</h6>
-                <h6 className={findActivesSection(3)} onClick={() => scrollTo(3)}>About Us</h6>
-                <h6 className={findActivesSection(4)} onClick={() => scrollTo(4)}>Events</h6>
+                <h6 className={findActivesSection(0) + ' colaplink'} onClick={() => window.scrollTo(0, 0)}>Home</h6>
+                <h6 className={findActivesSection(1) + ' colaplink'} onClick={() => scrollTo(1)}>Goals</h6>
+                <h6 className={findActivesSection(2) + ' colaplink'} onClick={() => scrollTo(2)}>Find Us</h6>
+                <h6 className={findActivesSection(3) + ' colaplink'} onClick={() => scrollTo(3)}>About Us</h6>
+                <h6 className={findActivesSection(4) + ' colaplink'} onClick={() => scrollTo(4)}>Events</h6>
         </nav>
         </>
     )

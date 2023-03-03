@@ -18,6 +18,9 @@
 .open-menu {
     display: none;
 }
+.colaplink {
+    display: none;
+}
 .spacer {
     height: 96px;
 }
@@ -145,5 +148,8 @@
     .open-menu > h1 {
         color: #eb0028;
         transition: 1000ms;
+    }
+    .colaplink {
+        display: block;
     }
 }
