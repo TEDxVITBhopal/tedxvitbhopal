@@ -25,6 +25,9 @@ const Header = () => {
         else
             return 'navlink'
     }
+    const scrollTo = (sectionNumber) => {
+        window.scrollTo(0, sectionNumber * window.innerHeight + 50)
+    }
 
     return(
         <>
@@ -32,18 +35,18 @@ const Header = () => {
         <header className={scrollPostion>minimiseAtPoint? 'header mini':'header'}>
             <img src={logo} alt="tedxvitbhopal logo" className={scrollPostion>minimiseAtPoint? 'header-logo mini':'header-logo'}/>
             <nav className='header-navbar'>
-                <h6 className={findActivesSection(0)} onClick={() => {window.scrollTo(0, 0)}}>Home</h6>
-                <h6 className={findActivesSection(1)} onClick={() => {window.scrollTo(0, window.innerHeight + 50)}}>Goals</h6>
-                <h6 className={findActivesSection(2)} onClick={() => {window.scrollTo(0, 2 * window.innerHeight + 50)}}>Find Us</h6>
-                <h6 className={findActivesSection(3)} onClick={() => {window.scrollTo(0, 3 * window.innerHeight + 50)}}>About Us</h6>
-                <h6 className={findActivesSection(4)} onClick={() => {window.scrollTo(0, 4 * window.innerHeight + 50)}}>Events</h6>
+                <h6 className={findActivesSection(0)} onClick={() => window.scrollTo(0, 0)}>Home</h6>
+                <h6 className={findActivesSection(1)} onClick={() => scrollTo(1)}>Goals</h6>
+                <h6 className={findActivesSection(2)} onClick={() => scrollTo(2)}>Find Us</h6>
+                <h6 className={findActivesSection(3)} onClick={() => scrollTo(3)}>About Us</h6>
+                <h6 className={findActivesSection(4)} onClick={() => scrollTo(4)}>Events</h6>
             </nav>
             <nav className='header-navbar-dropdown'>
-                <h6 className={findActivesSection(0)} onClick={() => {window.scrollTo(0, 0)}}>Home</h6>
-                <h6 className={findActivesSection(1)} onClick={() => {window.scrollTo(0, window.innerHeight + 50)}}>Goals</h6>
-                <h6 className={findActivesSection(2)} onClick={() => {window.scrollTo(0, 2 * window.innerHeight + 50)}}>Find Us</h6>
-                <h6 className={findActivesSection(3)} onClick={() => {window.scrollTo(0, 3 * window.innerHeight + 50)}}>About Us</h6>
-                <h6 className={findActivesSection(4)} onClick={() => {window.scrollTo(0, 4 * window.innerHeight + 50)}}>Events</h6>
+                <h6 className={findActivesSection(0)} onClick={() => window.scrollTo(0, 0)}>Home</h6>
+                <h6 className={findActivesSection(1)} onClick={() => scrollTo(1)}>Goals</h6>
+                <h6 className={findActivesSection(2)} onClick={() => scrollTo(2)}>Find Us</h6>
+                <h6 className={findActivesSection(3)} onClick={() => scrollTo(3)}>About Us</h6>
+                <h6 className={findActivesSection(4)} onClick={() => scrollTo(4)}>Events</h6>
             </nav>
         </header>
         </>
