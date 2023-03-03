@@ -2,16 +2,16 @@ import React from 'react';
 import Forms from './Forms';
 import styles from "./Event.module.css";
 
-const RegsiterEvent = () => {
+const RegsiterEvent = ({eventURL, eventTitle}) => {
   return (
       <div>
         <div className={styles.heading}>
-          <span className={styles.heading}>Register for TedX Event.</span>
+          <span className={styles.heading}>
+            Register for <span className='red'>{eventTitle}</span> today!
+          </span>
         </div>
         <Forms
-          event={
-            "https://tedxvitbhopal-178a6-default-rtdb.firebaseio.com/event.json"
-          }
+          event={eventURL}
         />
       </div>
   );
