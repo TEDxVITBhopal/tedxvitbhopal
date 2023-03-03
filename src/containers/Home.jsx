@@ -10,7 +10,6 @@ const Home = () => {
     return(
         <main className="home-page">
             <section className="dp-div" id="welcome">
-                WELCOME
             </section>
             <section className="dp-div" id="our-message">
                 <OurMessage/>
