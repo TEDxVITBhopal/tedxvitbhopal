@@ -1,81 +1,83 @@
 body {
-    overflow-x: hidden;
-  }
-  
-  .heading1 {
-    font-weight: bolder;
-    font-size: 5em;
-    text-shadow: 2px 2px #000000;
-  }
-  
-  .globe {
-    margin-right: 300px;
-    margin-top: 40px;
-    height: 500px;
-    width: 400px;
-  }
-  
-  .rect2 {
-    margin-top: -50px;
-    margin-left: 50px;
-    height: 196px;
-    width: 312px;
-  }
-  
-  .rect1 {
-    margin-left: -300px;
-    margin-top: -50px;
-    height: 281px;
-    width: 250px;
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .up {
-    margin-top: -150px;
-  }
-  
-  .flexImages {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px;
-  }
-  
-  .imageWrapper {
-    display: flex;
-  }
-  
-  .down {
-    margin-top: -150px;
-    margin-left: 700px;
-  }
-  
-  .down1 {
-    margin-top: 30px;
-    margin-left: 700px;
-  }
-  
-  .up1 {
-    margin-top: 180px;
-  }
-  
-  .mic {
-    margin-right: 300px;
-    margin-top: -530px;
-    height: 500px;
-    width: 400px;
-  }
-  
-  .rectD1 {
-    margin-top: 10px;
-  }
-  
-  .rectD2 {
-    margin-top: 10px;
-  }
-  
+  overflow-x: hidden;
+}
+
+.heading1 {
+  font-weight: bolder;
+  font-size: 3.5em;
+}
+
+.globe {
+  margin-right: 300px;
+  margin-top: 40px;
+  height: 500px;
+  width: 400px;
+}
+
+#top-upper {
+  margin-top: 35px;
+}
+
+.rect2 {
+  margin-top: -50px;
+  margin-left: 50px;
+  height: 196px;
+  width: 312px;
+}
+
+.rect1 {
+  margin-left: -300px;
+  margin-top: -50px;
+  height: 281px;
+  width: 250px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.up {
+  margin-top: -150px;
+}
+
+.flexImages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.imageWrapper {
+  display: flex;
+}
+
+.down {
+  margin-top: -150px;
+  margin-left: 700px;
+}
+
+.down1 {
+  margin-top: 30px;
+  margin-left: 700px;
+}
+
+.up1 {
+  margin-top: 180px;
+}
+
+.mic {
+  margin-right: 300px;
+  margin-top: -530px;
+  height: 500px;
+  width: 400px;
+}
+
+.rectD1 {
+  margin-top: 10px;
+}
+
+.rectD2 {
+  margin-top: 10px;
+}

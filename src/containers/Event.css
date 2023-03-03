@@ -2,3 +2,7 @@
   height: 100vh;
   border: 1px black solid;
 }
+
+#speakers {
+  height: fit-content;
+}

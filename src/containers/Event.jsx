@@ -1,6 +1,9 @@
 import React from 'react';
 import RegsiterEvent from '../components/event/RegisterEvent';
+import Speaker from "../components/event/Speaker"
 import './Event.css'
+// speaker images
+import rectangle from '../resources/rectangle.png';
 
 const Event = () => {
   return (
@@ -12,7 +15,8 @@ const Event = () => {
         venue-photo
       </div>
       <div className='page' id='speakers'>
-        speakers
+        <Speaker
+          images={[rectangle, rectangle, rectangle, rectangle]}/>
       </div>
       <div className='page' id='register'>
         <RegsiterEvent

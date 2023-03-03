@@ -4,8 +4,6 @@ import OurMessage from "../components/home/OurMessage"
 
 import AboutUs from "../components/home/AboutUs"
 
-import Speaker from "../components/event/Speaker"
-
 const Home = () => {
     return(
         <main className="home-page">
@@ -21,7 +19,7 @@ const Home = () => {
                 <AboutUs/>
             </section>
             <section className="dp-div" id="our-events">
-                <Speaker/>
+                Events
             </section>
             {/* Footer here */}
         </main>
