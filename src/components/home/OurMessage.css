@@ -1,5 +1,7 @@
 .container {
   max-width: 1200px;
+  max-height: 100vh;
+  transform: translateY(-20%);
 }
 
 .center {

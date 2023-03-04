@@ -1,13 +1,18 @@
+import './Home.css';
+
 import FindUs from "../components/home/FindUs"
 
 import OurMessage from "../components/home/OurMessage"
 
 import AboutUs from "../components/home/AboutUs"
 
+import WelcomeScreen from '../components/home/Welcome';
+
 const Home = () => {
     return(
         <main className="home-page">
             <section className="dp-div" id="welcome">
+                <WelcomeScreen/>
             </section>
             <section className="dp-div" id="our-message">
                 <OurMessage/>

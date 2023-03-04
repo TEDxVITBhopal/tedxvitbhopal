@@ -1,0 +1,45 @@
+.left {
+  margin-inline: 5vw;
+  float: left;
+  height: 100vh;
+}
+
+.welcome-img {
+  width: 40vw;
+}
+
+.right {
+  height: 100vh;
+  padding-right: 5vw;
+}
+
+.quote {
+  color: black;
+  margin-top: 20vh;
+  font-size: 4vw;
+}
+
+.red {
+  color: #eb0028;
+}
+
+@media only screen and (max-width: 800px) {
+  .left {
+    margin-top: 5vh;
+    width: 100vw;
+    height: 45vh;
+  }
+  .welcome-img {
+    width: 80vw;
+    margin-left: 5vw;
+  }
+
+  .right {
+    height: 55vh;
+    padding: 50px;
+  }
+  .quote {
+    text-align: center;
+    font-size: 28px;
+  }
+}
