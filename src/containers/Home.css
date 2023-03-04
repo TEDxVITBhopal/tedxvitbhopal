@@ -3,6 +3,7 @@
   flex-direction: column;
   height: max-content;
   overflow-x: hidden;
+  margin-block: 50px;
 }
 
 .dp-div {
