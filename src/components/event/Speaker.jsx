@@ -5,10 +5,10 @@ import mic from '../../resources/mic.png'
 
 function Speaker({images}) {
 
-  var showBottom = true;
+  let showBottom = true;
 
   if (images.length <= 4){
-    var showBottom = false;
+     showBottom = false;
   }
   return (
     <div className="container">
