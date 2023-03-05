@@ -3,9 +3,14 @@
   flex-direction: column;
   height: max-content;
   overflow-x: hidden;
-  margin-block: 50px;
 }
 
 .dp-div {
   height: 100vh;
+}
+
+@media only screen and (max-width: 800px) {
+  .home-page {
+    margin-block: 50px;
+  }
 }
