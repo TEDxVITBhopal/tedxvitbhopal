@@ -4,24 +4,28 @@ import FindUs from "../components/home/FindUs"
 import OurMessage from "../components/home/OurMessage"
 import AboutUs from "../components/home/AboutUs"
 import WelcomeScreen from '../components/home/Welcome';
+import Footer from "./../components/Footer";
 
 const Home = () => {
-    return(
+    return (
         <main className="home-page">
             <section className="dp-div" id="welcome">
-                <WelcomeScreen/>
+                <WelcomeScreen />
             </section>
             <section className="dp-div" id="our-message">
-                <OurMessage/>
+                <OurMessage />
             </section>
             <section className="dp-div" id="find-us">
-                <FindUs/>
+                <FindUs />
             </section>
             <section className="dp-div" id="about-us">
-                <AboutUs/>
+                <AboutUs />
             </section>
             <section className="dp-div" id="our-events">
                 Events
+            </section>
+            <section className='dp-div' id="footer">
+                <Footer />
             </section>
         </main>
     )
