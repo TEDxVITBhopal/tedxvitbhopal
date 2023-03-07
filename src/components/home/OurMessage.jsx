@@ -11,8 +11,8 @@ function OurMessage() {
         </div>
         <div className="right-side">
           <div className="center">
-            <span className="red">Our&nbsp;</span>
-            <span className="black">Message</span>
+            <span className="red">Cosmic&nbsp;</span>
+            <span className="black">Butterflies</span>
         </div>
           <div className="content1">
             TEDx is a grassroots initiative, created in the spirit of TED’s overall

@@ -16,7 +16,7 @@ function Footer() {
               JOIN OUR NEWSLETTER
             </Button>
             <p>
-              Be the first one to hear from us ! You can unsubscribe our update
+              Be the first one to hear from us! You can unsubscribe our update
               anytime you want
             </p>
           </div>

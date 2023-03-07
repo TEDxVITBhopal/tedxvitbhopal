@@ -22,7 +22,6 @@ const Home = () => {
                 <AboutUs />
             </section>
             <section className="dp-div" id="our-events">
-                Events
             </section>
             <section className='dp-div' id="footer">
                 <Footer />

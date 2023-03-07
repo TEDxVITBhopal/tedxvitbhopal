@@ -10,8 +10,8 @@ const WelcomeScreen = () => {
         </div>
         <div className="right">
             <h1 className="quote">
-                This is a <span className="red">very inspiring</span> quote,
-                and you should <span className="red">learn something</span>.
+                Vision begins with the eyes,
+                <span className="red"> but it truly takes place in the brain</span>.
             </h1>
         </div>
         </>
