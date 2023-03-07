@@ -20,7 +20,8 @@
   padding: 2%;
 }
 
-h1 {
+.title {
+  text-align: left;
   font-weight: bold;
   color: #d9d5d5;
   font-size: 75px;
@@ -36,14 +37,15 @@ h1 {
 
 .text-box {
   border: 2px #e62b1e solid;
+  font-size: 16px;
   padding: 20px;
-  width: 80%;
+  width: 85%;
 }
 
 .people-cheering {
   position: absolute;
   width: 50%;
-  margin-top: 320px;
+  margin-top: 50vh;
   transform: translateX(-40%);
 }
 
@@ -85,7 +87,7 @@ h1 {
     margin-left: 9vw;
   }
 
-  h1 {
+  .title {
     font-size: 40px;
   }
 

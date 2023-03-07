@@ -9,7 +9,7 @@ footer{
   background-color: black;
  /* height:1000px ; 
  width:100vw; */
- height: 100vh;
+ height: 85vh;
 }
 @media only screen and (max-width: 700px){
   .Footer{

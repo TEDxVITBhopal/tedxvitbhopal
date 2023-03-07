@@ -26,11 +26,13 @@
   box-shadow: 10px 10px 67px -49px rgba(0, 0, 0, 0.75);
 }
 
-h3 {
+.text-center {
   font-size: xx-large;
+  line-height: 1.5;
   font-weight: bold;
   margin-bottom: 20px;
   width: 20vw;
+  color: black;
 }
 
 .content {
@@ -47,11 +49,11 @@ h3 {
   box-shadow: 10px 10px 67px -49px rgba(0, 0, 0, 0.75);
 }
 
-p {
+.about {
   text-align: center;
   word-wrap: normal;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 2;
   margin-bottom: 20px;
   width: 20vw;
 }
@@ -60,7 +62,6 @@ p {
   .find-us {
     display: flex;
     flex-wrap: wrap;
-    transform: translateY(20%);
     margin-inline: 20px;
     padding: 20px;
     align-items: center;
@@ -84,12 +85,12 @@ p {
     box-shadow: none;
   }
 
-  h3 {
+  .text-center {
     font-size: large;
     width: 100%;
   }
 
-  p {
+  .about {
     font-size: small;
     width: 100%;
   }

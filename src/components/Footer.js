@@ -34,10 +34,7 @@ function Footer() {
                 <span>Partners</span>
               </li>
               <li className={styles.link}>
-                <span>Privacy Policy</span>
-              </li>
-              <li className={styles.link}>
-                <span>TedxVITBhopal Newsletter</span>
+                <span>TEDxVITBhopal Newsletter</span>
               </li>
               <li className={styles.link}>
                 <span>Community Conversation</span>

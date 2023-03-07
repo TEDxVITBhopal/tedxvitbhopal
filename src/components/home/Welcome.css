@@ -4,6 +4,10 @@
   height: 100vh;
 }
 
+.quote {
+  font-weight: bold;
+}
+
 .welcome-img {
   width: 40vw;
 }

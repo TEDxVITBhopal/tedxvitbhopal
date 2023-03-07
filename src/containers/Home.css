@@ -9,8 +9,13 @@
   height: 100vh;
 }
 
+#footer{ 
+  height: 85vh;
+}
+
 @media only screen and (max-width: 800px) {
-  .home-page {
+  #home-page {
     margin-block: 50px;
+    height: 60vh;
   }
 }

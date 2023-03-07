@@ -5,7 +5,7 @@ function FindUs() {
   <div className='find-us'>
    <div className="content">
       <h3 className='text-center'>Welcome to VIT Bhopal!</h3>
-      <p>VIT Bhopal University is a private university in Kothri Kalan in Sehore district, Madhya Pradesh, India. It was established by the Vellore Institute of Technology.</p>
+      <p className='about'>VIT Bhopal University is a private university in Kothri Kalan in Sehore district, Madhya Pradesh, India. It was established by the Vellore Institute of Technology.</p>
    </div>
     <div className="map-container">
      
