@@ -1,11 +1,8 @@
 import './Home.css';
-
+// screen components
 import FindUs from "../components/home/FindUs"
-
 import OurMessage from "../components/home/OurMessage"
-
 import AboutUs from "../components/home/AboutUs"
-
 import WelcomeScreen from '../components/home/Welcome';
 
 const Home = () => {
@@ -26,7 +23,6 @@ const Home = () => {
             <section className="dp-div" id="our-events">
                 Events
             </section>
-            {/* Footer here */}
         </main>
     )
 }
