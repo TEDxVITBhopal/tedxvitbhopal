@@ -55,7 +55,6 @@
 }
 .navlink {
   text-decoration: none;
-  font-size: large;
   padding: 5px;
   margin: 0;
   border-radius: 10px;
@@ -82,7 +81,7 @@
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgb(255, 255, 255);
     padding: 0px 30px;
     transition: 50ms;
     z-index: 1;
@@ -101,13 +100,12 @@
   }
   .header-navbar-dropdown {
     display: none;
-    width: 100%;
+    width: 100vw;
     height: 50px;
-    justify-content: left;
+    justify-content: space-around;
     user-select: none;
-    gap: 10px;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgb(255, 255, 255);
     padding: 0px 10px;
     transition: 100ms;
     z-index: 1;
@@ -133,7 +131,7 @@
   }
   .navlink {
     font-size: small;
-    padding: 5px;
+    padding: 5px 10px;
     border-bottom: none;
   }
   .open-menu {
