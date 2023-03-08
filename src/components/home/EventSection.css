@@ -7,6 +7,7 @@
 }
 .event-section-title {
     font-size: 40px;
+    font-weight: bold;
     margin: 0;
     padding: 0;
 }
@@ -59,7 +60,7 @@
     box-shadow: 3px 3px black;
 }
 .event-card.show {
-    animation: cardAnimation linear 300ms;
+    animation: cardAnimation linear 500ms;
     visibility: visible;
 }
 .event-card-title, .event-page-button {
@@ -88,31 +89,31 @@
 
 @keyframes cardAnimation {
     0% {
-        opacity: 0;
+        opacity: 0%;
         box-shadow: 0;
         border-radius: 0;
         transform: translateY(15px);
     }
     25% {
-        opacity: 25;
+        opacity: 20%;
         box-shadow: 1px 1px black;
         border-radius: 5px;
         transform: translateY(10px);
     }
     50% {
-        opacity: 50;
+        opacity: 40%;
         box-shadow: 2px 2px black;
         border-radius: 10px;
         transform: translateY(5px);
     }
     75% {
-        opacity: 75;
+        opacity: 60%;
         box-shadow: 3px 3px black;
         border-radius: 15px;
         transform: translateY(0px);
     }
     100% {
-        opacity: 100;
+        opacity: 100%;
         box-shadow: 3px 3px black;
     }
 }

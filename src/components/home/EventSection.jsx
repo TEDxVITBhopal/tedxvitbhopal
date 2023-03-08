@@ -10,9 +10,7 @@ const EventSection = () => {
     }
     const hideCard = (cardID) => {
         const card = document.getElementById(cardID)
-        setTimeout(() => {
-            card.className = 'event-card'
-        }, 2000) 
+        card.className = 'event-card'
     }
 
     return(
