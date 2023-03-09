@@ -25,10 +25,6 @@
   font-weight: bold;
 }
 
-.red {
-  color: #eb0028;
-}
-
 @media only screen and (max-width: 800px) {
   .welcome-section {
     flex-direction: column;
@@ -43,7 +39,7 @@
     max-width: 250px;
   }
   .quote {
-    font-size: 6vw;
+    font-size: 5vw;
     padding: 3%;
   }
 }

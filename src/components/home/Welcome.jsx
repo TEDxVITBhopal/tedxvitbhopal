@@ -11,7 +11,7 @@ const WelcomeScreen = () => {
             <blockquote className="welcome-pane">
                 <h1 className="quote">
                 Vision begins with the eyes,
-                <span className="#eb0028">&nbsp;but it truly takes place in the brain</span>.
+                <span style={{color: '#eb0028'}}>&nbsp;but it truly takes place in the brain</span>.
                 </h1>
             </blockquote>
         </section>

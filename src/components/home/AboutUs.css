@@ -2,14 +2,15 @@
   display: flex;
   margin: 0;
   padding: 0;
-  align-content: items;
+  height: 100%;
+  width: 100vw;
   justify-content: center;
 }
 
 #about-tedx {
   float: left;
   width: 60vw;
-  padding: 6%;
+  padding: 5%;
 }
 
 #about-tedxvitb {

@@ -10,7 +10,7 @@ function OurMessage() {
           <p>
             <h1><strong>Cosmic Butterfly</strong></h1>
             <br></br>
-            The message of TEDx VIT Bhopal's "Cosmic Butterfly"
+            The message of TEDx VIT Bhopal's<em>&nbsp;Cosmic Butterfly&nbsp;</em>
             theme is to ignite action and build together a diverse community of individuals who are
             passionate about creating positive change and fostering a greater appreciation for the
             beauty and complexity of the universe. Speakers at the event explore a wide range of topics,
@@ -28,7 +28,7 @@ function OurMessage() {
           </button>
         </section>
       </aside>
-      <section className="our-message-container">
+      <section id="our-message-container" className="our-message-container">
         <header className="our-message-title">
           Cosmic&nbsp;<span style={{color: 'red'}}>Butterfly</span>
         </header>
@@ -38,7 +38,7 @@ function OurMessage() {
           </figure>
           <article className="right pane">
             <p className="our-message-writeup">
-              TEDx VIT Bhopal's chapter theme of "Cosmic Butterfly" is in itself a mission to explore
+              TEDx VIT Bhopal's chapter theme of <em>"Cosmic Butterfly"</em> is in itself a mission to explore
               the intersection of science, art, and the metaphysical, and to promote a deeper
               understanding of the interconnectedness of all things in the universe. We hope to
               evoke awe and curiosity about the mysteries of the cosmos and encourage attendees to
