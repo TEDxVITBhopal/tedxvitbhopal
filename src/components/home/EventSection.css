@@ -1,7 +1,7 @@
 .event-section-container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: max-content;
     align-items: center;
     justify-content: center;
 }
@@ -39,7 +39,7 @@
     background-color: #eb0028;
 }
 .event-connector {
-    height: 2px;
+    height: 3px;
     background-color: #eb0028;
     width: 55%;
     position: absolute;
@@ -115,5 +115,42 @@
     100% {
         opacity: 100%;
         box-shadow: 3px 3px black;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .event-section-container {
+        gap: 50px;
+    }
+    .event-timeline {
+        width: 110%;
+    }
+    .event-connector {
+        width: 60%;
+    }
+    .event-card {
+        text-align: center;
+        height: 200px;
+        width: 400px;
+        border-radius: 10px;
+        box-shadow: 3px 3px black;
+        font-size: 14px;
+        padding: 2px;
+    }
+    .event-card-title, .event-page-button {
+        height: 30px;
+        text-align: center;
+        font-size: 12px;
+        width: 200px;
+        border-radius: 10px;
+        margin-top: -250px;
+        padding: 3px;
+    }
+    .event-card-title.up {
+        margin-bottom: -250px;
+    }
+    .event-marker {
+        height: 30px;
+        width: 30px;
     }
 }

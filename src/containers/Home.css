@@ -5,7 +5,8 @@
 }
 
 .dp-div {
-  height: 100vh;
+  height: max-content;
+  padding: 10px;
   min-height: 600px;
   max-width: 100vw;
 }
