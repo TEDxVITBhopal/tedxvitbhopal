@@ -19,6 +19,10 @@
 .welcome-image {
   max-width: 400px;
 }
+.quote {
+  font-size: 4vw;
+  font-weight: bold;
+}
 
 .red {
   color: #eb0028;
@@ -36,6 +40,10 @@
   }
   .welcome-image {
     max-width: 250px;
+  }
+  .quote {
+    font-size: 6vw;
+    padding: 3%;
   }
 }
 @media only screen and (max-width: 400px) {
