@@ -1,9 +1,11 @@
 .event-section-container {
     display: flex;
     flex-direction: column;
-    height: max-content;
+    height: 100vh;
+    min-height: 600px;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
 }
 .event-section-title {
     font-size: 40px;
@@ -14,7 +16,7 @@
 .event-section {
     display: flex;
     height: max-content;
-    width: 100%;
+    width: 100vw;
     padding: 0% 10%;
     align-items: center;
     justify-content: space-around;
@@ -58,6 +60,7 @@
     border: 2px solid black;
     border-radius: 20px;
     box-shadow: 3px 3px black;
+    text-align: center;
 }
 .event-card.show {
     animation: cardAnimation linear 500ms;
@@ -119,38 +122,29 @@
 }
 
 @media screen and (max-width: 800px) {
-    .event-section-container {
-        gap: 50px;
-    }
     .event-timeline {
-        width: 110%;
+        height: 10%;
+        padding: 0% 5%;
+    }
+    .event-section-title {
+        font-size: 30px;
     }
     .event-connector {
         width: 60%;
     }
     .event-card {
-        text-align: center;
         height: 200px;
-        width: 400px;
+        width: 300px;
+        max-height: 200px;
         border-radius: 10px;
-        box-shadow: 3px 3px black;
         font-size: 14px;
-        padding: 2px;
     }
     .event-card-title, .event-page-button {
         height: 30px;
-        text-align: center;
         font-size: 12px;
-        width: 200px;
-        border-radius: 10px;
-        margin-top: -250px;
-        padding: 3px;
-    }
-    .event-card-title.up {
-        margin-bottom: -250px;
-    }
-    .event-marker {
-        height: 30px;
-        width: 30px;
+        width: 150px;
+        border-radius: 5px;
+        padding: 2px;
+        text-align: center;
     }
 }

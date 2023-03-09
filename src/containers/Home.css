@@ -6,18 +6,6 @@
 
 .dp-div {
   height: max-content;
-  padding: 10px;
   min-height: 600px;
-  max-width: 100vw;
-}
-
-#footer{ 
-  height: 85vh;
-}
-
-@media only screen and (max-width: 800px) {
-  #home-page {
-    margin-block: 50px;
-    height: 60vh;
-  }
+  width: 100vw;
 }

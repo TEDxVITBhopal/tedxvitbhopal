@@ -26,8 +26,9 @@ const Header = () => {
         else
             return 'navlink'
     }
-    const scrollTo = (sectionNumber) => {
-        window.scrollTo(0, sectionNumber * Math.max(window.innerHeight, 600))
+    const scrollTo = (sectionID) => {
+        // window.scrollTo(0, sectionNumber * Math.max(window.innerHeight, 600))
+        document.getElementById(sectionID).scrollIntoView()
     }
     const toggleNavbar = () => {
         const navbar = document.getElementById('collapsible-navbar')
@@ -44,18 +45,18 @@ const Header = () => {
             <button id='toggle-menu' className='open-menu button' onClick={() => toggleNavbar()}><h1 id='toggle-icon'>+</h1></button>
             <nav className='header-navbar'>
                 <h6 className={findActivesSection(0)} onClick={() => window.scrollTo(0, 0)}>Home</h6>
-                <h6 className={findActivesSection(1)} onClick={() => scrollTo(1)}>Goals</h6>
-                <h6 className={findActivesSection(2)} onClick={() => scrollTo(2)}>Find Us</h6>
-                <h6 className={findActivesSection(3)} onClick={() => scrollTo(3)}>About Us</h6>
-                <h6 className={findActivesSection(4)} onClick={() => scrollTo(4)}>Events</h6>
+                <h6 className={findActivesSection(1)} onClick={() => scrollTo('our-message')}>Goals</h6>
+                <h6 className={findActivesSection(2)} onClick={() => scrollTo('find-us')}>Find Us</h6>
+                <h6 className={findActivesSection(3)} onClick={() => scrollTo('about-us')}>About Us</h6>
+                <h6 className={findActivesSection(4)} onClick={() => scrollTo('our-events')}>Events</h6>
             </nav>
         </header>
         <nav id='collapsible-navbar' className={scrollPostion>minimiseAtPoint? 'header-navbar-dropdown mini':'header-navbar-dropdown'}>
                 <h6 className={findActivesSection(0) + ' colaplink'} onClick={() => window.scrollTo(0, 0)}>Home</h6>
-                <h6 className={findActivesSection(1) + ' colaplink'} onClick={() => scrollTo(1)}>Goals</h6>
-                <h6 className={findActivesSection(2) + ' colaplink'} onClick={() => scrollTo(2)}>Find Us</h6>
-                <h6 className={findActivesSection(3) + ' colaplink'} onClick={() => scrollTo(3)}>About Us</h6>
-                <h6 className={findActivesSection(4) + ' colaplink'} onClick={() => scrollTo(4)}>Events</h6>
+                <h6 className={findActivesSection(1) + ' colaplink'} onClick={() => scrollTo('our-message')}>Goals</h6>
+                <h6 className={findActivesSection(2) + ' colaplink'} onClick={() => scrollTo('find-us')}>Find Us</h6>
+                <h6 className={findActivesSection(3) + ' colaplink'} onClick={() => scrollTo('about-us')}>About Us</h6>
+                <h6 className={findActivesSection(4) + ' colaplink'} onClick={() => scrollTo('our-events')}>Events</h6>
         </nav>
         </>
     )
