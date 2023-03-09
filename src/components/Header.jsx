@@ -21,13 +21,13 @@ const Header = () => {
         setScrollPosition(window.scrollY)
     }
     const findActivesSection = (sectionNumber) => {
-        if(Math.floor(scrollPostion/window.innerHeight) === sectionNumber)
+        if(Math.floor((scrollPostion+300)/window.innerHeight) === sectionNumber)
             return 'navlink active'
         else
             return 'navlink'
     }
     const scrollTo = (sectionNumber) => {
-        window.scrollTo(0, sectionNumber * window.innerHeight + 50)
+        window.scrollTo(0, sectionNumber * window.innerHeight)
     }
     const toggleNavbar = () => {
         const navbar = document.getElementById('collapsible-navbar')
