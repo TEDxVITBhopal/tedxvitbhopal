@@ -17,7 +17,8 @@ const WelcomeScreen = () => {
       setQuoteIndex((quoteIndex + 1) % quotes.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, [quoteIndex]);
+  }, [quoteIndex, quotes.length]);
+  
 
   return (
     <section className="welcome-section">
