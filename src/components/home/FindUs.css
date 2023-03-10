@@ -29,6 +29,9 @@
   margin-left: -50px;
   height: 300px;
 }
+.map-frame{
+  border-radius: 10px;
+}
 .find-us-text {
   padding: 0px 20px;
   font-size: 18px;
@@ -72,6 +75,7 @@
   .map-frame {
     height: 250px;
     width: 100%;
+    border: 0;
   }
   .find-us-text {
     font-size: 16px;

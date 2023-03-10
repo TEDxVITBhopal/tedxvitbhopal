@@ -7,7 +7,7 @@ function OurMessage() {
     <>
       <aside id="message-modal" className="read-more-modal">
         <section className="read-more-writeup">
-          <p>
+          <div>
             <h1><strong>Cosmic <span style={{color: 'red'}}>Butterfly</span></strong></h1>
             <br></br>
             The message of TEDx VIT Bhopal's<em>&nbsp;Cosmic Butterfly&nbsp;</em>
@@ -19,7 +19,7 @@ function OurMessage() {
             "Cosmic Butterfly" theme is to foster a sense of wonder, curiosity, and connection among
             attendees, and to inspire them to take action towards creating a more sustainable and
             harmonious world.
-          </p>
+          </div>
           <button 
             style={{width : '100px'}} 
             className="read-more-button"
