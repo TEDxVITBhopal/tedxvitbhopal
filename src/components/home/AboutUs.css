@@ -75,14 +75,14 @@
 
   #about-tedx {
     float: none;
-    width: 100vw;
+    /* width: 100vw; */
     margin: 0;
     margin-left: 5vw;
   }
 
   #about-tedxvitb {
     float: none;
-    width: 100%;
+    width: auto;
     margin: 0;
     margin-top: 30px;
     margin-left: 9vw;
