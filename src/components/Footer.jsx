@@ -1,5 +1,4 @@
 import gmail from "../resources/gmail.png";
-import facebook from "../resources/facebook.png";
 import insta from "../resources/instagram.png";
 import linkedin from "../resources/linkedin.png";
 import medium from '../resources/medium.png'
