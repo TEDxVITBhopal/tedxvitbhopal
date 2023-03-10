@@ -10,12 +10,15 @@
 }
 
 .welcome-pane {
+  margin-top: 10px;
   display: flex;
   width: 50%;
   align-items: center;
   justify-content: center;
   text-align: left;
+  height:90%;
 }
+
 
 .welcome-image {
   max-width: 400px;
