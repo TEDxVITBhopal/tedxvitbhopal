@@ -20,9 +20,14 @@
 .welcome-image {
   max-width: 400px;
 }
+
 .quote {
   font-size: 4vw;
   font-weight: bold;
+}
+
+.quote .important-word {
+  color: #eb0028;
 }
 
 @media only screen and (max-width: 800px) {
@@ -43,6 +48,7 @@
     padding: 3%;
   }
 }
+
 @media only screen and (max-width: 400px) {
   .welcome-image {
     margin-top: -100px;
