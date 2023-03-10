@@ -19,8 +19,11 @@ function AboutUs() {
                     TEDxVITBhopal, which inaugurated in 2023, is a cooperation between students of Vellore Institute of Technology Bhopal and the larger  community to bring Technology, Entertainment, and Design from diverse visionaries, thinkers, and doers right to our doorstep.
                 </div>
             </div>
-            <img src={PeopleCheer} alt={"Web Team TEDxVITB"} className='people-cheering'/>
+            
+            
+           
             <img src={Bulb} alt={"Web Team TEDxVITB"} className='bulb'/>
+            <img src={PeopleCheer} alt={"Web Team TEDxVITB"} className='people-cheering'/>
         </div>
     )
 }
