@@ -6,6 +6,8 @@
   gap: 50px;
   margin-top: 50px;
   user-select: none;
+  background: url("../../resources/dark-space-bg.png") fixed;
+  background-size: cover;
 }
 
 .our-message-title {
@@ -14,6 +16,7 @@
   justify-content: center;
   align-items: center;
   font-size: 40px;
+  color: white;
   font-weight: bold;
 }
 
@@ -36,14 +39,16 @@
   align-items: flex-start;
 }
 .our-message-writeup {
-  border: #eb0028 3px solid;
+  border: #eb0028 5px solid;
   padding: 5%;
+  background: white;
   font-size: 18px;
 }
 
 .our-message-image {
   width: 35vw;
   max-width: 400px;
+  transform: translateY(-12.5%);
 }
 
 .read-more-button {
@@ -90,11 +95,17 @@
 }
 
 @media screen and (max-width: 800px) {
+  .our-message-container {
+    background: white;
+  }
   .our-message-content {
     flex-direction: column;
   }
   .our-message-image {
     display: none;
+  }
+  .our-message-title {
+    color: black;
   }
   .pane {
     width: 100%;

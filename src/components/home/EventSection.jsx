@@ -1,5 +1,6 @@
 import './EventSection.css'
 import logo from '../../resources/logo.png'
+import CogChyr from '../../resources/cog-chyr.png'
 
 const EventSection = () => {
 
@@ -17,12 +18,13 @@ const EventSection = () => {
         <section className='event-section-container'>
             <h1 className="event-section-title">The <span style={{color: '#eb0028'}}>Event</span> Timeline</h1>
             <section className='event-section'>
-                <aside id='event-card-one' className='event-card'>
-                    <img style={{width: '50px'}} src={logo} alt="" />
-                    <figcaption>The Inauguration Event</figcaption>
+                <aside id='event-card-one' className='event-card' >
+                    <p>Inauguration</p>
                 </aside>
                 <aside className='event-card-title up'>April 2023</aside>
-                <aside id='event-card-three' className='event-card'></aside>
+                <aside id='event-card-three' className='event-card'>
+                <p>Coming Soon...</p>
+                </aside>
             </section>
             <section className='event-timeline'>
                 <div className='event-connector'></div>
@@ -47,7 +49,9 @@ const EventSection = () => {
             </section>
             <section className='event-section'>
                 <aside className='event-card-title'>January 2023</aside>
-                <aside id='event-card-two' className='event-card'></aside>
+                <aside id='event-card-two' className='event-card'>
+                <p>Cognitive Chrysalis</p>
+                </aside>
                 <button className='event-page-button'>View More</button>
             </section>
         </section>

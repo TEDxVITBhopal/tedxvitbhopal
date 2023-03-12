@@ -35,7 +35,7 @@ function Footer() {
       <section className="footer-block socials">
         <h2>Socials</h2>
         <section className="footer-social-icons">
-          <a href="mailto:someone@gmail.com" className="social-link">
+          <a href="mailto:tedxvitbwebteam@gmail.com" className="social-link">
             <img src={gmail} alt="gmail icon" />
           </a>
           <a

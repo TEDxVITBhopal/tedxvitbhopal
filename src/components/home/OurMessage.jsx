@@ -1,6 +1,6 @@
 import React from "react";
 import "./OurMessage.css";
-import XlionImage from "../../resources/logo.png";
+import chapterLogo from "../../resources/chapter-logo.png";
 
 function OurMessage() {
   return (
@@ -34,7 +34,7 @@ function OurMessage() {
         </header>
         <section className="our-message-content">
           <figure className="left pane">
-            <img className="our-message-image" src={XlionImage} alt="TEDx logo with VITB lion" />
+            <img className="our-message-image" src={chapterLogo} alt="TEDx logo with VITB lion" />
           </figure>
           <article className="right pane">
             <p className="our-message-writeup">
