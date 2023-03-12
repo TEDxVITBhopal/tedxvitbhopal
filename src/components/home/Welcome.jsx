@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './Welcome.css';
 import WelcomeImg from '../../resources/tempo-welcome.png';
+import PeopleImg from '../../resources/people-conv.png';
 
 const WelcomeScreen = () => {
+  const [showWelcome, setShowWelcome] = useState(true);
+  const [showPeople, setShowPeople] = useState(false);
   const [quoteIndex, setQuoteIndex] = useState(0);
   const quotes = [
     'If you can’t <span class="important-word">explain it simply</span>, you don’t <span class="important-word">understand it well enough.</span>',
@@ -14,19 +17,36 @@ const WelcomeScreen = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
+      setShowWelcome((prev) => !prev);
+      setShowPeople((prev) => !prev);
+    }, 15000);
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
       setQuoteIndex((quoteIndex + 1) % quotes.length);
     }, 5000);
     return () => clearInterval(interval);
   }, [quoteIndex, quotes.length]);
-  
 
   return (
     <section className="welcome-section">
-      <figure className="welcome-pane">
-        <img src={WelcomeImg} alt="Welcome" className="welcome-image" />
-      </figure>
+      {showWelcome && (
+        <figure className="welcome-pane">
+          <img src={WelcomeImg} alt="Welcome" className="welcome-image" />
+        </figure>
+      )}
+      {showPeople && (
+        <figure className="welcome-pane">
+          <img src={PeopleImg} alt="People" className="welcome-image" />
+        </figure>
+      )}
       <blockquote className="welcome-pane">
-        <h1 className="quote" dangerouslySetInnerHTML={{ __html: quotes[quoteIndex] }}></h1>
+        <h1
+          className="quote"
+          dangerouslySetInnerHTML={{ __html: quotes[quoteIndex] }}
+        ></h1>
       </blockquote>
     </section>
   );
