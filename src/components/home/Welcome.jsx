@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Welcome.css';
 import WelcomeImg from '../../resources/tempo-welcome.png';
-import PeopleImg from '../../resources/people-conv.png';
+import PeopleImg from '../../resources/tempo-welcome.png';
 
 const WelcomeScreen = () => {
   const [showWelcome, setShowWelcome] = useState(true);

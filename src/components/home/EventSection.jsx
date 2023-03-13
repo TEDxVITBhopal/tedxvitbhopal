@@ -1,5 +1,5 @@
 import './EventSection.css'
-import logo from '../../resources/logo.png'
+import Inaug from '../../resources/inaug.png'
 import CogChyr from '../../resources/cog-chyr.png'
 
 const EventSection = () => {
@@ -19,11 +19,12 @@ const EventSection = () => {
             <h1 className="event-section-title">The <span style={{color: '#eb0028'}}>Event</span> Timeline</h1>
             <section className='event-section'>
                 <aside id='event-card-one' className='event-card' >
-                    <p>Inauguration</p>
+                    <img src={Inaug} alt="Inauguration" style={{width: "150px"}}/>
+                    <figcaption className='event-name' style={{color: "#eb0028"}}>Inauguration</figcaption>
                 </aside>
                 <aside className='event-card-title up'>April 2023</aside>
                 <aside id='event-card-three' className='event-card'>
-                <p>Coming Soon...</p>
+                <p>There's more on the way!</p>
                 </aside>
             </section>
             <section className='event-timeline'>
@@ -50,9 +51,10 @@ const EventSection = () => {
             <section className='event-section'>
                 <aside className='event-card-title'>January 2023</aside>
                 <aside id='event-card-two' className='event-card'>
-                <p>Cognitive Chrysalis</p>
+                <img src={CogChyr} alt="Cognitive Chrysalis" style={{height: "150px"}}/>
+                    <figcaption className='event-name' style={{color: "#58eacb"}}>Cognitive Chrysalis</figcaption>
                 </aside>
-                <button className='event-page-button'>View More</button>
+                <button className='event-page-button'>Coming Soon...</button>
             </section>
         </section>
     )

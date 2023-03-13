@@ -47,6 +47,12 @@
     position: absolute;
     z-index: -1;
 }
+
+.event-name {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
 .event-card {
     display: flex;
     align-items: center;
