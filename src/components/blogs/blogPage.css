@@ -1,0 +1,18 @@
+body {
+    margin-inline: 15vw;
+}
+
+.blog-title {
+    padding-block: 50px;
+}
+
+.title-style {
+    text-align: left;
+    font-weight: 900;
+}
+
+.image-style {
+    height: 300px;
+    width: 70vw;
+    object-fit: cover;
+}
