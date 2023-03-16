@@ -25,7 +25,7 @@ function Footer() {
         <a href="/" className="footer-link">
           ⎋ Members
         </a>
-        <a href="/" className="footer-link">
+        <a href="/blogs" className="footer-link">
           ⎋ Blog
         </a>
         <a href="tel:9561412330" className="footer-link">
