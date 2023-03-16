@@ -20,7 +20,7 @@ function App() {
             </>
           }
         />
-        <Route path="/blog" element={<BlogPage/>} />
+        <Route path="/blogs" element={<BlogPage/>} />
         <Route path="/*" element={<NotFound />} />
         <Route path="/event" element={<Event />} />
       </Routes>
