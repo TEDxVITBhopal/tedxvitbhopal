@@ -4,7 +4,7 @@ import Home from "./Home";
 import Header from "../components/Header";
 import Event from "./Event";
 import Footer from '../components/Footer'
-import BlogPage from "../components/blogs/blogPage";
+import BlogPage from "../components/blogs/blogComponent";
 
 function App() {
   return (
