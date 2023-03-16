@@ -1,6 +1,9 @@
-/* body {
+.container {
+    transform: translateY(-10%);
     margin-inline: 15vw;
-} */
+    width: 70vw;
+    height: fit-content;
+}
 
 .blog-title {
     padding-block: 30px;

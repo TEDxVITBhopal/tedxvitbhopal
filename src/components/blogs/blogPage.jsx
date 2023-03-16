@@ -4,7 +4,7 @@ import BlogImage from "../../resources/inaug-blog.jpg";
 
 const BlogPage = () => {
     return(
-        <>
+        <div className="container">
             <div className="blog-title">
                 <h1 className="title-style">The Beauty of Metamorphosis: <span className="red">Discover Your Own Cosmic Butterfly</span></h1>
                 <h5 className="by-line">By Atharv Pal and Astha Tripathi </h5>
@@ -21,7 +21,7 @@ const BlogPage = () => {
                 We come together as a community of passionate and curious individuals, sharing personal transformations and stories with one another that can inspire each other to reach new heights and achieve our greatest potential. Our chapter and metaphor are about the growth and transformation of ideas and people through the lens of this enchanting symbol. Together, we have the power to change things and build a better future for future generations as well as ourselves. At TEDx VIT Bhopal, we believe it is important for individuals to grow at their own pace, gradually writing their own stories. And as you write your story, our chapter's "Cosmic Butterfly" will fly out to invite you. There is a quote that encapsulates the butterfly effect in general terms, which goes like this— "Sometimes, when I consider what tremendous consequences come from little things, I am tempted to think... there are no little things."
                 </p>
             </div>
-        </>
+        </div>
     )
 }
 

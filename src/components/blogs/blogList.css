@@ -1,3 +1,25 @@
-body {
-    height: 20px;
+.blog-header {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 8vh;
+    background-color: black;
+    color: white;
+    padding-inline: 5vw;
+}
+
+.icon {
+    margin-block: 1vh;
+    height: 5vh;
+}
+
+.blogs-list {
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+}
+
+.button-text {
+    font-weight: 700;
+    font-size: 3vh;
 }
