@@ -7,7 +7,7 @@ import speakerImg from '../resources/test-person.jpg';
 // venue image (yes we change this)
 import VITImage from "../resources/vit.jpg";
 import bullseye from '../resources/bullseye.png'
-import ellipse from '../resources/ellipse.png'
+// import ellipse from '../resources/ellipse.png'
 
 const Event = () => {
   return (
