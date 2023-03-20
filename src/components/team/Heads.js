@@ -5,7 +5,7 @@ const Heads = () => {
   return (
     <div>
       <div className={styles.flex}>
-        <div>
+        <div className={styles.flexs}>
           <div className={styles.marginBottom}>
             <Photo />
           </div>
@@ -13,7 +13,7 @@ const Heads = () => {
             <span>Faculity coordinator</span>
           </div>
         </div>
-        <div>
+        <div className={styles.flexs}>
           <div className={styles.marginBottom}>
             <Photo />
           </div>
@@ -22,8 +22,8 @@ const Heads = () => {
           </div>
         </div>
       </div>
-      <div className={styles.flex}>
-        <div>
+      <div className={styles.Flex}>
+        <div className={styles.flexs}>
           <div className={styles.marginBottom}>
             <Photo />
           </div>
@@ -31,7 +31,7 @@ const Heads = () => {
             <span>President</span>
           </div>
         </div>
-        <div>
+        <div className={styles.flexs}>
           <div className={styles.marginBottom}>
             <Photo />
           </div>

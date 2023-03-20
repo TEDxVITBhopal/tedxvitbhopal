@@ -2,7 +2,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 116px;
+    gap: 124px;
+    margin-bottom: 24px;
+    flex-direction: row;
+}
+
+.Flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 142px;
 }
 
 .marginBottom{
@@ -17,4 +26,22 @@
     line-height: 24px;
 
     color: #000000;
+}
+
+.flexs{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 768px){
+    .flex{
+        flex-direction: column;
+        gap:60px;
+        margin-bottom: 60px;
+    }
+    .Flex{
+        flex-direction: column;
+        gap:60px
+    }
 }

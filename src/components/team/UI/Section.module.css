@@ -1,0 +1,32 @@
+
+
+.container{
+    background: #E5E5E5;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+   
+    /* gap:280px */
+
+}
+
+.card{
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+   
+    text-align: center !important;
+   
+
+    color: #EB0028;
+}
+
+.arrow{
+    float: right;
+    margin-top: -30px;
+    margin-right: 56px;
+}
