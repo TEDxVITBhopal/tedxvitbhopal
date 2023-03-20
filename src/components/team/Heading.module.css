@@ -1,0 +1,24 @@
+.heading{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    color: #EB0028;
+    margin-top: 76px;
+    margin-bottom: 42px;
+}
+
+.text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin-left: 126px;
+    margin-right: 126px;
+
+    color: #000000;
+}
