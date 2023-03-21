@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import RegsiterEvent from '../components/event/RegisterEvent';
 import Speaker from "../components/event/Speaker"
 import './Event.css'
@@ -8,21 +8,44 @@ import speakerImg from '../resources/test-person.jpg';
 import VITImage from "../resources/vit.jpg";
 import bullseye from '../resources/bullseye.png'
 // import ellipse from '../resources/ellipse.png'
+import { EventList } from './EventList';
 
 const Event = () => {
+  // hooks
+  const [slide, changeSlide] = useState(EventList.one)
+
+  // handlers
+  const handleSlideChange = async (slideObj) => {
+    const card = document.getElementById('slide-container')
+    card.className = 'push-back slideshow-slide'
+    changeSlide(slideObj)
+    setTimeout(() => {
+      card.className = 'slideshow-slide'
+    }, 1000);
+  }
+
   return (
     <>
       <section className='slideshow-page'>
         <menu className="slideshow-menu">
           <img src={bullseye} alt="" />
           <div className='slideshow-bullseye'>
-            <div className='slideshow-ring'>
-              <div className='slideshow-dot'></div>
-              <div className='slideshow-dot two'></div>
+            <div className='slideshow-ring' style={{rotate: slide.rotation}}>
+              <div className='slideshow-ball'>
+                <span id='slideshow-number'>{slide.slideNumber}</span>
+              </div>
             </div>
           </div>
+          <section className='slideshow-dots'>
+            <button className={slide.slideNumber === '1'? 'slideshow-dot current': 'slideshow-dot'} onClick={() => handleSlideChange(EventList.one)}></button>
+            <button className={slide.slideNumber === '2'? 'slideshow-dot current': 'slideshow-dot'} onClick={() => handleSlideChange(EventList.two)}></button>
+            <button className={slide.slideNumber === '3'? 'slideshow-dot current': 'slideshow-dot'} onClick={() => handleSlideChange(EventList.three)}></button>
+          </section>
         </menu>
-        <section className='slideshow-images'>slides</section>
+        <section className='slideshow-images'>
+          <article id='slide-container' className='slideshow-slide'></article>
+          <article id='slide-cover' className='slideshow-cover'></article>
+        </section>
       </section>
       <div className='page' id='venue'>
         <img id="venue-photo" src={VITImage} alt={"VITBhopal"}/>
