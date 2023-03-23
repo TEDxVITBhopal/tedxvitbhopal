@@ -3,6 +3,7 @@ import "./blogPage.css";
 import BlogImage from "../../resources/inaug-blog.jpg";
 
 const BlogPage = ({title_black, title_red, by, content}) => {
+
     return(
         <div className="container">
             <div className="blog-title">
