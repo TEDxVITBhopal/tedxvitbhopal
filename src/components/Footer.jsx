@@ -19,9 +19,10 @@ function Footer() {
       </section>
       <section className="footer-block links">
         <h2>Explore</h2>
-        <a href="/" className="footer-link">
+        <a href="/All-Events" className="footer-link">
           ⎋ All Events
         </a>
+
         <a href="/" className="footer-link">
           ⎋ Members
         </a>
