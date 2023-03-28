@@ -1,42 +1,41 @@
-import Photo from "./UI/Photo";
+
 import styles from "./Heads.module.css";
 
-const Heads = () => {
+const Heads = (props) => {
   return (
     <div>
       <div className={styles.flex}>
         <div className={styles.flexs}>
-          <div className={styles.marginBottom}>
-            <Photo />
-          </div>
+            <img className={styles.pic} src= {props.pic1} />
           <div className={styles.text}>
-            <span>Faculity coordinator</span>
+            <span>{props.pos1}</span><br/>
+            <span>{props.name1}</span>
           </div>
         </div>
+
         <div className={styles.flexs}>
-          <div className={styles.marginBottom}>
-            <Photo />
-          </div>
+           <img className={styles.pic} src= {props.pic2} />
           <div className={styles.text}>
-            <span>Faculity coordinator</span>
+            <span>{props.pos2}</span><br/>
+            <span>{props.name2}</span>
           </div>
         </div>
+
       </div>
       <div className={styles.Flex}>
         <div className={styles.flexs}>
-          <div className={styles.marginBottom}>
-            <Photo />
-          </div>
+          <img className={styles.pic} src= {props.pic3} />
           <div className={styles.text}>
-            <span>President</span>
+            <span>{props.pos3}</span>  <br/>
+            <span>{props.name3}</span>
           </div>
         </div>
         <div className={styles.flexs}>
-          <div className={styles.marginBottom}>
-            <Photo />
-          </div>
+          <img className={styles.pic} src= {props.pic4} />
           <div className={styles.text}>
-            <span>Tech/non-Tech Lead</span>
+            <span>{props.pos4}</span><br/>
+            <span>{props.name4}</span>
+
           </div>
         </div>
       </div>

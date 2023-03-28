@@ -14,8 +14,19 @@
     gap: 142px;
 }
 
-.marginBottom{
+.pic{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black ; 
+    border-radius: 50% ;
+    height: 150px ;
+    width:150px ; 
     margin-bottom: 30px;
+}
+
+.pic:hover{
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgb(212, 14, 14) ; 
+    transition: 300ms;
 }
 
 .text{
