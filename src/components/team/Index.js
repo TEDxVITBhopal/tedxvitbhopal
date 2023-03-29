@@ -2,7 +2,7 @@ import { useState } from "react";
 import styles from "./Index.module.css";
 import Header from "../Header";
 // import Footer from "../Footer.jsx";
-// import Heading from "./Heading.js";
+import Heading from "./Heading.js";
 import Heads from "./Heads";
 import SingleMember from "./SingleMember.js";
 import Members from "./Members";
@@ -157,9 +157,9 @@ const Index = () => {
     <div>
       <Header />
       <div>
-        {/* <div>
+        <div>
           <Heading />
-        </div> */}
+        </div>
         <div className={styles.margin}>
           <Heads
             pos1="Faculty Coordinator"
