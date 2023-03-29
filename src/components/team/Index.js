@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./Index.module.css";
-import Header from "C:/tedx//tedxvitbhopal/src/components/Header.jsx"
-import Footer from "C:/tedx//tedxvitbhopal/src/components/Footer.jsx"
+import Header from "../Header"
+import Footer from "../Footer.jsx"
 import Heading from "./Heading.js";
 import Heads from "./Heads";
 import SingleMember from "./SingleMember.js"; 
