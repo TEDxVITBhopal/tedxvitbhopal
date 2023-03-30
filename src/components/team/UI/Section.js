@@ -9,7 +9,11 @@ const Section = (props) => {
       <div className={styles.arrow}>
         {!props.show && (
           <div onClick={props.showHandler}>
-            <img src={up} alt="uparrow" />
+            <img
+              src={up}
+              alt="uparrow"
+              style={{ height: "25px", width: "25px" }}
+            />
           </div>
         )}
         {props.show && (
