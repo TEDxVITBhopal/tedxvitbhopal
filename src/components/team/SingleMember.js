@@ -9,7 +9,7 @@ function SingleMember(props) {
           <div>
             <b>{props.pos}</b>
           </div>
-          <div>{props.name}</div>
+          <div className={styles.vicetext}>{props.name}</div>
         </div>
       </div>
     </div>
