@@ -8,7 +8,7 @@ const Section = (props) => {
       <div className={`${styles.card}`}>{props.children}</div>
       <div className={styles.arrow}>
         {!props.show && (
-          <div onClick={props.showHandler}>
+          <div onClick={props.showHandler} className={styles.leftarrowgap}>
             <img
               src={up}
               alt="uparrow"
@@ -17,7 +17,7 @@ const Section = (props) => {
           </div>
         )}
         {props.show && (
-          <div onClick={props.showHandler}>
+          <div onClick={props.showHandler} className={styles.leftarrowgap}>
             <img src={down} alt="downarrow" />
           </div>
         )}
