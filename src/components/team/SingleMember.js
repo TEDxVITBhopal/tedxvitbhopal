@@ -6,8 +6,8 @@ function SingleMember(props) {
       <div className={styles.flexs}>
         <img className={styles.pic} src={props.pic} alt="img" />
         <div className={styles.flexs}>
-          <div>
-            <b>{props.pos}</b>
+          <div className={styles.vicetext}>
+            <span>{props.pos}</span>
           </div>
           <div className={styles.vicetext}>{props.name}</div>
         </div>
