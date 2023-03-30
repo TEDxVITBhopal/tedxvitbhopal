@@ -170,13 +170,15 @@ const Index = () => {
             name2="Dr. Yogesh Shukla"
             name3="Bhaibhav Raj"
             name4="Shantanu Singh"
+            name5="Rajeev Ranjan"
             pic1={fc1}
             pic2={fc2}
             pic3={president}
             pic4={vp1}
+            pic5={vp2}
           />
 
-          <SingleMember pos="Vice President" name="Rajeev Ranjan" pic={vp2} />
+          {/* <SingleMember pos="Vice President" name="Rajeev Ranjan" pic={vp2} /> */}
         </div>
       </div>
 

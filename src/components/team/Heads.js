@@ -39,6 +39,16 @@ const Heads = (props) => {
           </div>
         </div>
       </div>
+      <div>
+        <div className={`${styles.flexs} ${styles.top}`}>
+          <img className={styles.pic} src={props.pic5} alt="img" />
+          <div className={styles.text}>
+            <span>{props.pos4}</span>
+            <br />
+            <span>{props.name5}</span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
