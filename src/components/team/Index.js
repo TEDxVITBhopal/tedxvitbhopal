@@ -400,7 +400,7 @@ const Index = () => {
                 pos1="Member"
                 pos2="Member"
                 name1="Aviral Dwivedi"
-                name2="Muskan Pande"
+                name2="Muskan Pandey"
                 pic1={hm1}
                 pic2={hm2}
               />
