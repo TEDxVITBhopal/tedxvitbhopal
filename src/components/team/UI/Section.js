@@ -8,12 +8,16 @@ const Section = (props) => {
       <div className={`${styles.card}`}>{props.children}</div>
       <div className={styles.arrow}>
         {!props.show && (
-          <div onClick={props.showHandler}>
-            <img src={up} alt="uparrow" />
+          <div onClick={props.showHandler} className={styles.leftarrowgap}>
+            <img
+              src={up}
+              alt="uparrow"
+              style={{ height: "25px", width: "25px" }}
+            />
           </div>
         )}
         {props.show && (
-          <div onClick={props.showHandler}>
+          <div onClick={props.showHandler} className={styles.leftarrowgap}>
             <img src={down} alt="downarrow" />
           </div>
         )}

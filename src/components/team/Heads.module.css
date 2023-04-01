@@ -39,10 +39,25 @@
     color: #000000;
 }
 
+.vicetext{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000000;
+
+}
+
 .flexs{
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.top{
+    margin-top: 60px;
 }
 
 @media only screen and (max-width: 768px){
@@ -53,6 +68,7 @@
     }
     .Flex{
         flex-direction: column;
-        gap:60px
+        gap:60px;
+        margin-bottom: 60px;
     }
 }
