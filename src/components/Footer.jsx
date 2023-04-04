@@ -23,7 +23,7 @@ function Footer() {
           ⎋ All Events
         </a>
 
-        <a href="/" className="footer-link">
+        <a href="/team" className="footer-link">
           ⎋ Members
         </a>
         <a href="/blogs" className="footer-link">

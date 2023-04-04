@@ -102,54 +102,54 @@ import sm2 from "./resources/team_pic/Sawari_Jamgaonkar.jpg";
 import sm3 from "./resources/team_pic/ARYAN_SAKLANI.png";
 
 const Index = () => {
-  // const [show, setShow] = useState(false);
+  // const [show, setShow] = useState(true);
   // const showHandler = () => {
   //   setShow(!show);
   // };
   //states for each team and handler
   //webTeamHandler
-  const [web, setWebTeam] = useState(false);
+  const [web, setWebTeam] = useState(true);
   const webTeamHandler = () => {
     setWebTeam(!web);
   };
   //Planninghandler
-  const [plan, setPlan] = useState(false);
+  const [plan, setPlan] = useState(true);
   const planHandler = () => {
     setPlan(!plan);
   };
   //content
-  const [content, setContent] = useState(false);
+  const [content, setContent] = useState(true);
   const contentHandler = () => {
     setContent(!content);
   };
   //media
-  const [media, setMedia] = useState(false);
+  const [media, setMedia] = useState(true);
   const mediaHanlder = () => {
     setMedia(!media);
   };
   //hospitality
-  const [hospitality, setHospitality] = useState(false);
+  const [hospitality, setHospitality] = useState(true);
   const hostHandler = () => {
     setHospitality(!hospitality);
   };
   //registration
-  const [register, setRegister] = useState(false);
+  const [register, setRegister] = useState(true);
   const registerHandler = () => {
     setRegister(!register);
   };
   //photo
-  const [photo, setPhoto] = useState(false);
+  const [photo, setPhoto] = useState(true);
   const photoHandler = () => {
     setPhoto(!photo);
   };
 
   //production
-  const [prod, setProd] = useState(false);
+  const [prod, setProd] = useState(true);
   const prodHandler = () => {
     setProd(!prod);
   };
   //finance
-  const [finance, setFinance] = useState(false);
+  const [finance, setFinance] = useState(true);
   const financeHanlder = () => {
     setFinance(!finance);
   };
