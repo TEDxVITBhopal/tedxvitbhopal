@@ -1,55 +1,27 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import RedBulb from '../../resources/ideabulb.png';
 import './Welcome.css';
-import WelcomeImg from '../../resources/tempo-welcome.png';
-import PeopleImg from '../../resources/tempo-welcome.png';
 
 const WelcomeScreen = () => {
-  const [showWelcome, setShowWelcome] = useState(true);
-  const [showPeople, setShowPeople] = useState(false);
-  const [quoteIndex, setQuoteIndex] = useState(0);
-  const quotes = [
-    'If you can’t <span class="important-word">explain it simply</span>, you don’t <span class="important-word">understand it well enough.</span>',
-    'The <span class="important-word">greatest danger</span> in times of turbulence is not the turbulence; it is to <span class="important-word">act with yesterday\'s logic</span>.',
-    'Science and technology <span class="important-word">revolutionize our lives</span>, but memory, tradition and myth <span class="important-word">frame our response</span>.',
-    'It is the tension between <span class="important-word">creativity and skepticism</span> that has produced the stunning and unexpected <span class="important-word">findings of science</span>.',
-    '<span class="important-word">Imagination is more </span> important than knowledge.<span class="important-word"> Knowledge is limited.</span> Imagination encircles the world.'
-  ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setShowWelcome((prev) => !prev);
-      setShowPeople((prev) => !prev);
-    }, 15000);
-    return () => clearInterval(interval);
-  }, []);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setQuoteIndex((quoteIndex + 1) % quotes.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [quoteIndex, quotes.length]);
-
-  return (
-    <section className="welcome-section">
-      {showWelcome && (
-        <figure className="welcome-pane">
-          <img src={WelcomeImg} alt="Welcome" className="welcome-image" />
-        </figure>
-      )}
-      {showPeople && (
-        <figure className="welcome-pane">
-          <img src={PeopleImg} alt="People" className="welcome-image" />
-        </figure>
-      )}
-      <blockquote className="welcome-pane">
-        <h1
-          className="quote"
-          dangerouslySetInnerHTML={{ __html: quotes[quoteIndex] }}
-        ></h1>
-      </blockquote>
-    </section>
-  );
+  return(
+    <div className='container'>
+      <img src={RedBulb} alt="idea" className='redbulb'/>
+      <div className='titleContainer'>
+        <p>Ideas worth spreading</p>
+      </div>
+      <div className='textContainer'>
+        <p>Welcome to <span style={{color: '#eb0028', fontWeight: 'bold'}}>TEDx</span>VITBhopal, where we showcase inpiring talks from our local community. Join us in spreading ideas and sparking change in the world.</p>
+      </div>
+      <div className='buttons'>
+        <div className='button'>
+          Know more
+        </div>
+        <div className='button'>
+          Cognitive Chrysalis
+        </div>
+      </div>
+    </div>
+  )
 };
 
 export default WelcomeScreen;

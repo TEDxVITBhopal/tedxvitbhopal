@@ -1,64 +1,46 @@
-.welcome-section {
+.container {
+  padding-top: 8vh;
+  max-height: 70vh;
+}
+
+.container .redbulb {
+  height: 18vh;
+}
+
+.container .titleContainer {
+  margin-top: 5vh;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.container .textContainer {
+  margin-top: 5vh;
+  max-width: 40vw;
+  min-width: 35vw;
+  text-align: center;
+  font-size: 21px;
+}
+
+.container .buttons {
   display: flex;
-  height: 100vh;
-  align-items: space-around;
-  justify-content: center;
-  gap: 50px;
-  padding: 5%;
-  user-select: none;
+  justify-content: space-between;
+  width: 60vw;
+  margin-top: 5vh;
 }
 
-.welcome-pane {
-  margin-top: 10px;
-  display: flex;
-  width: 50%;
-  align-items: center;
-  justify-content: center;
-  text-align: left;
-  
-}
-
-
-.welcome-image {
-  max-width: 400px;
-}
-.people-image {
-  max-width: 400px;
-}
-.quote {
-  font-size: 4vw;
-  font-weight: bold;
-}
-
-.quote .important-word {
+.container .buttons .button {
   color: #eb0028;
+  padding: 12px;
+  font-size: 21px;
+  border: solid 1px #eb0028;
+  transition: 200ms;
 }
 
-@media only screen and (max-width: 800px) {
-  .welcome-section {
-    flex-direction: column;
-    gap: 50px;
-  }
-  .welcome-pane {
-    margin: 0;
-    width: 100%;
-    text-align: center;
-  }
-  .welcome-image {
-    max-width: 250px;
-  }
-  .people-image {
-    max-width: 250px;
-  }
-  .quote {
-    font-size: 5vw;
-    padding: 3%;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .welcome-image {
-    margin-top: -100px;
-    max-width: 250px;
-  }
+.container .buttons .button:hover {
+  cursor: pointer;
+  background-color: #eb0028;
+  color: white;
+  padding: 12px;
+  font-size: 21px;
+  border: solid 1px #eb0028;
 }
