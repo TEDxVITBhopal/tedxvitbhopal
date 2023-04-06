@@ -41,7 +41,7 @@ const Header = () => {
         <>
         <div className="spacer"></div>
         <header className={scrollPostion>minimiseAtPoint? 'header mini':'header'}>
-            <img src={scrollPostion>minimiseAtPoint? logoWhite:logoBlack} alt="tedxvitbhopal logo" className={scrollPostion>minimiseAtPoint? 'header-logo mini':'header-logo'}/>
+            <img src={scrollPostion>minimiseAtPoint? logoWhite:logoBlack} alt="tedxvitbhopal logo" className={scrollPostion>minimiseAtPoint? 'header-logo mini':'header-logo'} onClick={() => window.scrollTo(0,0)}/>
             <button id='toggle-menu' className='open-menu button' onClick={() => toggleNavbar()}><h1 id='toggle-icon'>+</h1></button>
             <nav className='header-navbar'>
                 <h6 className={findActivesSection(0)} onClick={() => window.scrollTo(0, 0)}>Home</h6>

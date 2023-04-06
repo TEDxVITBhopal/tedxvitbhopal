@@ -16,7 +16,7 @@ const WelcomeScreen = () => {
         <div className='button'>
           Know more
         </div>
-        <div className='button'>
+        <div className='button' id="event-btn">
           Cognitive Chrysalis
         </div>
       </div>

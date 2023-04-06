@@ -1,6 +1,7 @@
 .container {
   padding-top: 8vh;
   max-height: 70vh;
+  text-align: center;
 }
 
 .container .redbulb {
@@ -33,6 +34,7 @@
   padding: 12px;
   font-size: 21px;
   border: solid 1px #eb0028;
+  text-align: center;
   transition: 200ms;
 }
 
@@ -43,4 +45,35 @@
   padding: 12px;
   font-size: 21px;
   border: solid 1px #eb0028;
+}
+
+.container .buttons #event-btn {
+  background-color: #eb0028;
+  color: white;
+}
+
+.container .buttons #event-btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #eb0028;
+  padding: 12px;
+  font-size: 21px;
+  border: solid 1px #eb0028;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    padding-top: 0;
+  }
+  .container .textContainer {
+    max-width: 80vw;
+  }
+
+  .container .buttons {
+    flex-direction: column;
+  }
+
+  .container .buttons #event-btn {
+    margin-block: 20px;
+  }
 }

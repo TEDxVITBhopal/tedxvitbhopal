@@ -11,7 +11,7 @@ function Footer() {
         <figure>
           <img className="footer-logo" src={logo} alt="TEDxVITB logo" />
         </figure>
-        <button className="newsletter-button">Cognitive Chrysalis event page</button>
+        <button className="newsletter-button">Cognitive Chrysalis</button>
         <p className="newsletter-text">
           Quickly! Register for our latest event to get the best seats at the best price!
         </p>

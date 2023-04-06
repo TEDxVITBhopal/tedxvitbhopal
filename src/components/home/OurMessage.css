@@ -96,16 +96,14 @@
 
 @media screen and (max-width: 800px) {
   .our-message-container {
-    background: white;
+    height: fit-content;
+    padding-block: 10vh;
   }
   .our-message-content {
     flex-direction: column;
   }
   .our-message-image {
     display: none;
-  }
-  .our-message-title {
-    color: black;
   }
   .pane {
     width: 100%;
