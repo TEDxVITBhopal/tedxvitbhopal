@@ -5,7 +5,8 @@ img {
   object-fit: cover;
 } */
 
-.heading1 {
+
+/* .heading1 {
   font-weight: bolder;
   font-size: 3.5em;
 }
@@ -84,4 +85,103 @@ img {
 
 .rectD2 {
   margin-top: 10px;
+} */
+.Speakers{
+margin: 100px 200px;
+}
+
+.Speakers h1{
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px ;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 124px;
+  /* margin-bottom: 24px;
+  margin-top: 50px; */
+  flex-direction: row;
+}
+
+.Flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 142px;
+}
+
+.pic{
+  
+  background-color: rgb(234, 0, 0);
+  border: 2px solid black ; 
+  border-radius: 50% ;
+  height: 150px ;
+  width:150px ; 
+  margin-bottom: 30px;
+}
+
+.pic:hover{
+  
+  border: 5px solid red 50%;
+  background-color: rgb(255, 255, 255);
+  transition: 300ms;
+}
+
+.text{
+  text-align: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #000000;
+}
+
+.vicetext{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #000000;
+
+}
+
+.flexs{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.top{
+  margin-top: 60px;
+}
+
+@media only screen and (max-width: 768px){
+  .flex{
+      flex-direction: column;
+      gap:60px;
+      margin-bottom: 60px;
+  }
+  .Flex{
+      flex-direction: column;
+      gap:60px;
+      margin-bottom: 60px;
+  }
+}
+
+@keyframes expand {
+  from {
+      max-height: 0;
+      opacity: 0;
+  } to {
+      max-height: 400px;
+      opacity: 1;
+  }
+  
 }
