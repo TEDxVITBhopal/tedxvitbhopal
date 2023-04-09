@@ -175,6 +175,23 @@ margin: 100px 200px;
   }
 }
 
+.container{
+  display: flex;
+  align-items: center;
+}
+
+.speakersection{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.speakerflex{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 @keyframes expand {
   from {
       max-height: 0;

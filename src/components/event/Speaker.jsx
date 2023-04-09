@@ -1,8 +1,10 @@
+import { useState } from 'react';
 import React from 'react';
-import globe from '../../resources/globe.png';
+// import globe from '../../resources/globe.png';
 import image from "./resources/PUSHPDANT_JAIN.png"; 
-import Speaker from './Speaker.css';
-import mic from '../../resources/mic.png'
+// import mic from '../../resources/mic.png'
+import styles from "./Speaker.module.css"
+import dummy from "./../../resources/dummyimage.png"
 
 
   // let showBottom = true;
@@ -45,40 +47,73 @@ import mic from '../../resources/mic.png'
   //       </div>
   //     </div> : <div></div> }  
   //   </div>
-  function Speakers(props) {
-    function changeBackground(e) {
-      e.target.style.background = 'red';
+  const Speakers = (props) => {
+    const[speaker1, setSpeaker1] = useState(true);
+    const [speaker2, setSpeaker2] = useState(false);
+    const [speaker3, setSpeaker3] = useState(false);
+    const[speaker4, setSpeaker4] = useState(false);
+    // function changeBackground(e) {
+    //   e.target.style.background = 'red';
+    // }
+    const speaker1Handler = () => {
+      setSpeaker1(true);
+      setSpeaker2(false);
+      setSpeaker3(false);
+      setSpeaker4(false);
+      console.log("speaker 1")
+    }
+    const speaker2Handler = () => {
+      setSpeaker1(false);
+      setSpeaker2(true);
+      setSpeaker3(false);
+      setSpeaker4(false);
+      console.log("speaker 2")
+    }
+    const speaker3Handler = () => {
+      setSpeaker1(false);
+      setSpeaker2(false);
+      setSpeaker3(true);
+      setSpeaker4(false);
+      console.log("speaker 3")
+    }
+    const speaker4Handler = () => {
+      setSpeaker1(false);
+      setSpeaker2(false);
+      setSpeaker3(false);
+      setSpeaker4(true);
+      console.log("speaker 4")
     }
     return (
-      <div className="Speakers">
+      <div className={styles.container}>
+      <div className={styles.Speakers}>
       <h1>Speakers</h1>
-     <div className="flex">
-        <div className="flexs">
-          <img className="pic" src={image} alt="img" />
-          <div className="flex">
-            <div>
+     <div className={styles.flex}>
+        <div className={styles.flexs} onMouseOver={speaker1Handler}>
+          <img className={styles.pic} src={image} alt="img" />
+          <div className={styles.flex} >
+            <div >
               <b>{props.pos1}</b>
             </div>
             <div>{props.name1}</div>
           </div>
         </div>
   
-        <div className="flexs">
-          <img className="pic" src={image} alt="img" onMouseOver={changeBackground} />
-          <div className="flexs">
-            <div>
-              <b>{props.pos2}</b>
+        <div className={styles.flexs} onMouseOver={speaker2Handler}>
+          <img className={styles.pic} src={image} alt="img" />
+          <div className={styles.flex} >
+            <div >
+              <b>{props.pos1}</b>
             </div>
-            <div>{props.name2}</div>
+            <div>{props.name1}</div>
           </div>
         </div>
       </div>
     
 
-        <div className="flex">
-        <div className="flexs">
-          <img className="pic" src={image} alt="img" />
-          <div className="flex">
+        <div className={styles.flex}>
+        <div className={styles.flexs} onMouseOver={speaker3Handler}>
+          <img className={styles.pic} src={image} alt="img" />
+          <div className={styles.flex}>
             <div>
               <b>{props.pos1}</b>
             </div>
@@ -86,16 +121,80 @@ import mic from '../../resources/mic.png'
           </div>
         </div>
   
-        <div className="flexs">
-          <img className="pic" src={image} alt="img" />
-          <div className="flexs">
+        <div className={styles.flexs} onMouseOver={speaker4Handler}>
+          <img className={styles.pic} src={image} alt="img" />
+          <div className={styles.flex}>
             <div>
-              <b>{props.pos2}</b>
+              <b>{props.pos1}</b>
             </div>
-            <div>{props.name2}</div>
+            <div>{props.name1}</div>
           </div>
         </div>
       </div>
+      </div>
+      <div>
+       { speaker1 && <div className={styles.speakersection}>
+          <div>
+            <img src={dummy} alt="img" />
+          </div>
+          <div className={styles.speakerflex}>
+           <div>
+            <span>Speaker 1</span>
+            </div>
+            <div>
+              <span>Job/Post</span>
+              </div>
+          </div>
+        </div>
+  }
+
+{ speaker2 && <div className={styles.speakersection}>
+          <div>
+            <img src={dummy} alt="img" />
+          </div>
+          <div className={styles.speakerflex}>
+           <div>
+            <span>Speaker 2</span>
+            </div>
+            <div>
+              <span>Job/Post</span>
+              </div>
+          </div>
+        </div>
+  }
+  { speaker3 &&   <div className={styles.speakersection}>
+          <div>
+            <img src={dummy} alt="img" />
+          </div>
+          <div className={styles.speakerflex}>
+           <div>
+            <span>Speaker 3</span>
+            </div>
+            <div>
+              <span>Job/Post</span>
+              </div>
+          </div>
+        </div>
+  }
+
+{ speaker4 &&   <div className={styles.speakersection}>
+          <div>
+            <img src={dummy} alt="img" />
+          </div>
+          <div className={styles.speakerflex}>
+           <div>
+            <span>Speaker 4</span>
+            </div>
+            <div>
+              <span>Job/Post</span>
+              </div>
+          </div>
+        </div>
+  }
+        
+      </div>
+      
+
       </div>
     
     );
