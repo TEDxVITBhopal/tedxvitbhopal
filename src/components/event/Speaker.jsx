@@ -84,9 +84,14 @@ import dummy from "./../../resources/dummyimage.png"
       console.log("speaker 4")
     }
     return (
+      <div>
+        <div className={styles.heading}>
+          <span>Speakers</span>
+        </div>
       <div className={styles.container}>
+  
       <div className={styles.Speakers}>
-      <h1>Speakers</h1>
+      
      <div className={styles.flex}>
         <div className={styles.flexs} onMouseOver={speaker1Handler}>
           <img className={styles.pic} src={image} alt="img" />
@@ -138,10 +143,10 @@ import dummy from "./../../resources/dummyimage.png"
             <img src={dummy} alt="img" />
           </div>
           <div className={styles.speakerflex}>
-           <div>
+           <div className={styles.spname}>
             <span>Speaker 1</span>
             </div>
-            <div>
+            <div className={styles.post}>
               <span>Job/Post</span>
               </div>
           </div>
@@ -153,10 +158,10 @@ import dummy from "./../../resources/dummyimage.png"
             <img src={dummy} alt="img" />
           </div>
           <div className={styles.speakerflex}>
-           <div>
+           <div className={styles.spname}>
             <span>Speaker 2</span>
             </div>
-            <div>
+            <div className={styles.post}>
               <span>Job/Post</span>
               </div>
           </div>
@@ -167,10 +172,10 @@ import dummy from "./../../resources/dummyimage.png"
             <img src={dummy} alt="img" />
           </div>
           <div className={styles.speakerflex}>
-           <div>
+           <div className={styles.spname}>
             <span>Speaker 3</span>
             </div>
-            <div>
+            <div className={styles.post}>
               <span>Job/Post</span>
               </div>
           </div>
@@ -182,10 +187,10 @@ import dummy from "./../../resources/dummyimage.png"
             <img src={dummy} alt="img" />
           </div>
           <div className={styles.speakerflex}>
-           <div>
+           <div className={styles.spname}>
             <span>Speaker 4</span>
             </div>
-            <div>
+            <div className={styles.post}>
               <span>Job/Post</span>
               </div>
           </div>
@@ -195,6 +200,7 @@ import dummy from "./../../resources/dummyimage.png"
       </div>
       
 
+      </div>
       </div>
     
     );

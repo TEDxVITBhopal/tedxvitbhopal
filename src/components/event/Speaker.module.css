@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
 /* body {
   overflow-x: hidden;
 }
@@ -190,6 +192,41 @@ margin: 100px 200px;
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.spname{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  /* identical to box height */
+
+
+  color: #EB0028;
+}
+
+.post{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+
+
+  color: #000000;
+}
+
+.heading{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  text-align: center;
+  color: #000000;
+  margin-top: 60px;
 }
 
 @keyframes expand {
