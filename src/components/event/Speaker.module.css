@@ -239,3 +239,12 @@ margin: 100px 200px;
   }
   
 }
+
+@media only screen and (max-width: 768px){
+  .container{
+    flex-direction: column;
+  }
+  .imagediv{
+    display: none;
+  }
+}

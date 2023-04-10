@@ -139,7 +139,7 @@ import dummy from "./../../resources/dummyimage.png"
       </div>
       <div>
        { speaker1 && <div className={styles.speakersection}>
-          <div>
+          <div className={styles.imagediv}>
             <img src={dummy} alt="img" />
           </div>
           <div className={styles.speakerflex}>
@@ -154,7 +154,7 @@ import dummy from "./../../resources/dummyimage.png"
   }
 
 { speaker2 && <div className={styles.speakersection}>
-          <div>
+          <div className={styles.imagediv}>
             <img src={dummy} alt="img" />
           </div>
           <div className={styles.speakerflex}>
@@ -168,7 +168,7 @@ import dummy from "./../../resources/dummyimage.png"
         </div>
   }
   { speaker3 &&   <div className={styles.speakersection}>
-          <div>
+          <div className={styles.imagediv}>
             <img src={dummy} alt="img" />
           </div>
           <div className={styles.speakerflex}>
@@ -183,7 +183,7 @@ import dummy from "./../../resources/dummyimage.png"
   }
 
 { speaker4 &&   <div className={styles.speakersection}>
-          <div>
+          <div className={styles.imagediv}>
             <img src={dummy} alt="img" />
           </div>
           <div className={styles.speakerflex}>
